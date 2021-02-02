@@ -513,6 +513,108 @@ True or False: Availability zones are isolated from each other and are not conne
 
 * False
 
+## Amazon Machine Images
+
+We have briefly touched upon what an AMI is in the previous section. Let’s do a quick recap and explore further.
+
+AMIs include all the necessary information/configurations required to launch an instance. To launch an instance, you will have to specify an AMI and the instance type.
+
+An AMI consists of three things:
+
+* Snapshots of EBS or a template for the root volume of the instance: We will explore this further when covering the process to create an AMI.
+* Permissions: Permissions to authorize users to use the AMI to launch instances.
+* A block device mapping: This mapping connects the volume to the instance.
+
+There are two types of AMI. You can either create your own AMI or use the available AMIs in the marketplace. The Amazon marketplace contains several different varieties of built-in AMIs with commonly used configurations that are readily available for use. For example, you have a Ubuntu AMI to run a Ubuntu instance or a windows-based AMI to run a Windows instance. For common uses, built-in AMIs enable you to quickly deploy an instance and start working on your development.
+
+Next, let’s see the cycle of processes that an AMI goes through.
+
+### Lifecycle of an AMI
+Each AMI goes through a cycle of creation, usage and a delete cycle.
+
+You can create an AMI and register in the AWS community. Once they are registered, you can use those AMIs in either of two ways:
+
+* You can launch an instance from the AMI.
+* You can copy the AMI to the same or different region for reuse.
+
+The launched instances can further be customized and stored as another AMI.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f914_ami-lifecycle/ami-lifecycle.png)
+
+Note that to launch an instance from AMI, you must have launch permission from the AMI owner.
+
+If you no longer require an AMI, you can erase the AMI from the marketplace by deregistering it. Deregistering an AMI does not affect the instance created from them.
+
+### Creating your own AMI
+Here we will be covering the process of creating a Linux-based AMI. For windows-based AMI refer to the AWS documentation.
+
+There are 3 ways to create a linux-based AMI using an existing AMI.
+
+* Using an Amazon EBS-backed AMI
+* Using an instance-store-backed AMI
+* Using an image builder
+
+The root storage device of the instance is used to determine the process to create an AMI. So, before we explore these two processes, let’s understand what a root storage is.
+
+Every instance has a root storage volume. The root storage volume has an image that includes all the necessary information to boot an instance during its launch. This root storage volume can either be an Amazon EBS (Elastic Block Storage) volume or an instance store volume.
+
+You can determine the root storage volume of an AMI by looking at the description of an AMI. The reference ebs indicates Amazon EBS-backed AMI and instance store indicates an instance store backed AMI.
+
+### Using an Amazon EBS-backed AMI
+Consider a scenario where you want to configure multiple instances that include specific configurations. You then come across an Amazon EBS-backed AMI in the AWS marketplace that more or less meets your required configuration but might need a few customizations. In that case, you can simply use that AMI to launch an instance, customize the instance as per your requirement, and save the customized AMI. You can then use the custom AMI to launch multiple instances to use the updated configuration.
+
+An AMI consists of a snapshot of the EBS root volume. When an instance is launched the snapshot is used to create an EBS root volume for the instance.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f946_using-an-amazon-ebs-based-ami-2/using-an-amazon-ebs-based-ami-2.png)
+
+This was just an example. For you to reuse and customize an AMI, they don’t necessarily have to be in the AWS marketplace. It can be any AMI that you can access but remember that the root volume has to be an Amazon EBS volume.
+
+### Using an instance-store-backed AMI
+The process to create an instance-store-backed AMI is very similar to using the Amazon EBS-backed AMI. Here you identify an instance store backed AMI and launch an instance from it. Customize it as per your requirement and bundle the volume. Bundling a volume is a time-consuming process. A bundle comprises an image manifest and files that include the template of the root volume. Then, upload the bundle to the Amazon S3 bucket and register it. You can then use the registered AMI to launch multiple instances.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f95e_using-an-instance-stored-based-ami/using-an-instance-stored-based-ami.png)
+
+When a new instance is launched using the newly created AMI, a root volume is created using the image file of the root volume in Amazon S3.
+
+Whenever more instance volumes are added to the instance, the block device mapping of both, the new AMI and the instance, contains information about the newly added volumes.
+
+### Using an image builder
+You can create any AMI (Windows or Linux based) using an image builder. Using an image builder along with AWS VM Import/Export (VMIE), you can not only create an AMI but also other formats such as vmdk, vhdx, ovf, etc.
+
+An image builder is used to make the image building process easier and faster. EC2 image builder is a service used to create, maintain, store, and deploy Windows and Linux based images for Amazon EC2 and on premise. The images created from the EC2 image builder can be pre-installed and pre-configured with software and settings to meet specific IT requirements.
+
+An image builder consists of an image pipeline. An image pipeline defines the process of customizing the images. It consists of the image recipe, build components, infrastructure configuration, distribution, and test settings. An image recipe is a document that specifies all components and tests applied to the source image to create an image with the required configuration. The source image is the image selected and the OS for which the customizations are applied.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f9b3_image-builder/image-builder.png)
+
+The process to build an image using the Image Builder include:
+
+* Selecting the source image: An existing AMI or a snapshot of EBS volume.
+* Creating an image recipe: You add components to create an image recipe for your image pipeline. Components are the building blocks that are consumed by an image recipe, for example, packages for installation, security hardening steps, and tests. The selected OS and components make up an image recipe.
+* Output: An image in the required output format is created.
+* Distribute: The image can then be distributed across AWS Regions after it passes tests in the image pipeline.
+
+There are various processes associated with an AMI like selling an AMI, buying an AMI, etc. These processes are out of the scope for this course. If you want to know more refer to the links in the further research section.
+
+## Quiz: Amazon Machine Images
+
+### QUESTION 1 OF 3
+True or False: a single AMI can be used to launch multiple instances of different instance types.
+
+* True
+
+### QUESTION 2 OF 3
+What happens to the instances created from an AMI, when an AMI is deregistered?
+
+* It does not affect the instances created from that AMI.
+
+### QUESTION 3 OF 3
+What does an AMI consist of? Select the 3 options that apply.
+
+* Snapshot of EBS or a template of the root volume of an instance
+* Permissions
+* Role mappings
+
 
 
 
