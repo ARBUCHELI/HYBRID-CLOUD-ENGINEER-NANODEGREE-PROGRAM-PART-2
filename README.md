@@ -921,6 +921,83 @@ When you enable MFA, you will use the username and password to login to your use
 
 This way even if the password is leaked, the user will not be authenticated as the second factor of authentication cannot be passed.
 
+## Quiz: IAM
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/493.jpg)
+
+### QUESTION 2 OF 2
+True or False: AWS collects the information provided in the request as a request context to analyze and authorize the request.
+
+* True
+
+## VPC
+
+### Virtual Private Cloud (VPC)
+
+Virtual Private Cloud or VPC is a feature in AWS that provides service level security to your AWS resource. Virtual Private Cloud is a service where you can provision and launch an isolated section of Amazon Web Services using a virtual private network defined by you. This way you can implement the network infrastructure similar to an on-premises datacenter, but with the benefit of a scalable infrastructure. To compare and contrast, in an Amazon EC2 service, the internal and external IP addresses are assigned by Amazon; in a VPC, the internal IP, and external IP addresses are defined by the customer.
+
+Imagine VPC as your own datacenter in the cloud that can be accessed only by the network defined by you. VPC is separated from the other networks used to connect to the cloud.
+
+If Amazon EC2 becomes the compute layer, then VPC will be the network layer of your infrastructure. A few AWS services that can be used by Amazon VPC are Amazon EC2, Amazon RDS, Amazon Route S3, and so on.
+
+The network configurations that you can define for your Amazon VPC include defining the IP addresses, subnets, network gateways, and so on. You can increase security by including security groups to the instances in your subnets.
+
+### Accessing VPC
+You can create and access VPC using the AWS management console, AWS CLI, AWS SDKs, and Query API.
+
+### How does a VPC work
+If you are new to networking, here are a few terms you must know before we move further.
+
+* VPC: Basically, a virtual network to your Amazon account.
+* Subnet: A range of IP addresses that you could use to connect to the VPC.
+* Internet Gateway: A gateway in your VPC to enable communication between the VPC and internet.
+* Routing table: Rules that define the route to your network traffic.
+* NAT Gateway: A gateway that allows instances in the private subnet to connect to the internet but not allow the internet to initiate a connection with the instance.
+
+Each VPC can have a range of IPv4 addresses that can be used for its communication. A VPC spans across all availability zones in a given region to provide availability. You can define one or more subnets within a VPC. A subnet is one or more range of IP addresses used to connect to the VPC. A subnet cannot span across multiple availability zones and should be within a single availability zone.
+
+You can configure 3 types of subnets in a VPC:
+
+* Private subnet
+* Public subnet
+* VPN-only subnet
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fb42_subnet-types/subnet-types.png)
+
+Private subnets are used for instances to communicate with each other within a subnet. Private subnets can only have private IP addresses.
+
+For instances to be able to communicate with the internet, the subnet must have a public IP address or an elastic IP. For now think of elastic IP as a static public IP address that an instance can have. We will explain elastic IP further in this lesson. The subnet must then be connected to an internet gateway. An internet gateway enables an instance to connect to the internet.
+
+If you want to enable your instance on the Amazon EC2 to connect with your on-premise network. The subnets in the VPC and the internal on-premise network must be connected to a virtual private gateway. The subnet connected to a virtual private gateway is called a VPN-only subnet. This type of connection is called AWS site to site VPN.
+
+Subnets group the instances but it is the routing table that decides the route in which a traffic is directed. Every VPC comes with a default routing table to manage traffic across all subnets in the VPC. Every subnet must be associated with at least one routing table for it to decide how an incoming or outgoing traffic be directed within and outside a network. Each routing table consists of many rules called routes that specify the destination and a target for a traffic.
+
+Let us next understand the different types of VPCs. There are 2 types of VPC, default VPC and non default VPC.
+
+Default VPC is a VPC that comes with your Amazon account by default. You also get a default subnet along with the default VPC. If you do not want to use a default VPC and prefer creating one of your own. It is called non-default VPC.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fb60_default-vpc/default-vpc.png)
+
+As mentioned earlier, only a default VPC contains a default subnet. A subnet created for a non-default VPC and additional subnets created for a default VPC are called non-default subnets. You can use public subnets to connect resources within a VPC to the internet and private subnet to enable resources to communicate internally. VPC uses routing tables to direct traffic within and outside a subnet.
+
+The advantage of a default VPC is that it helps you get started quickly. It is useful when you do not have specific requirements and it also eliminates the hassle to create and configure a VPC from scratch. You can use the default VPC and even make customizations to the existing configurations based on your need.
+
+### Connecting to the internet
+Now that you know what a default VPC is, let’s explore how a default and a non default VPC connect to the internet.
+
+An instance launched in the default VPC comes with the public and private IPv4 addresses.
+
+To connect your default VPC to the internet, you can use the default internet gateway. All traffic leaving the default VPC and reaching the internet passes through the internet gateway. Security groups are used to control communication at the instance level but the internet gateway is used to control traffic outside a VPC. An internet gateway enables your instances to connect to the internet through the Amazon EC2 network edge.
+
+The instance launched in a non-default VPC only contains private IP4 addresses. You have to explicitly specify a public IP4 address for any instance from a non-default VPC to connect to the internet. Another way for a non-default VPC to connect to the internet is to change the subnet’s public address attribute.
+
+### Use cases
+One of the common use cases for VPC is hosting a multi-tier web application. Using VPC you can enforce strict security restrictions to your application. Consider an application with an application server, database server, and web server. Using VPC, you can host the web server in a public subnet and the application server and database server in a private subnet. This way you can restrict access to the application and database server. You can even control communications between these servers by using security groups and access control lists.
+
+Another use case is moving your organization's application to the cloud without compromising on network security. With VPC, you can easily migrate your corporate applications to the cloud and use your existing VPN to connect to your applications. This way you do not have to change the way the users have been accessing the application. It also provides the added benefit of scalability. You can add compute and other necessary resources required to scale as per your need with complete control on the network.
+
+The VPC concept is vast and a few topics are out of the scope of this course. If you want to know more on these topics, refer to the links in the further research section.
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
