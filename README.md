@@ -1023,5 +1023,64 @@ For a given Amazon account, how many VPCs are available by default?
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=a05CTelIAeE&feature=emb_logo)
 
+## Elastic IP
+
+Let’s consider an example to understand what an elastic IP address is and how it will be useful.
+
+Consider that you have a website that communicates with an instance on AWS. This site uses the public IPv4 address of the instance to connect to it over the internet.
+
+Every instance has a default public IPv4 address. This public IP address changes when an instance stops or restarts. Upon restart, the instance is dynamically assigned a new public IPv4 address from the Amazon pool of public IP addresses.
+
+Now, in our scenario, if the instance fails and restarts, then the website will no longer be able to communicate with the instance. This is because the instance will now have a new public IP address and the website points to the old public IP address.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fc6d_inelastic-ip/inelastic-ip.png)
+
+Thus, to avoid such communication failures, you can use elastic IPs. Every Amazon account holder will have access to 5 default elastic IPs. You can allocate an elastic IP to the Amazon account and then associate it with an instance. Elastic IP is a static public IPv4 address that you can associate to an instance. An Elastic IP can be associated with only one instance at any time. If an elastic IP is assigned to an instance that already has a public IP address, then the public IP address is automatically dropped into the Amazon’s pool of IPv4 addresses.
+
+So, in the scenario we mentioned earlier, the communication failure can be avoided using an elastic IP. During an instance failure, you can simply associate the elastic IP address to a new functional instance. This way the website pointing to the elastic IP will still be functional even if an instance fails.
+
+If the failed instance is back online, you can again assign the elastic IP back to the first instance. This elasticity in assignment of public IP address results in continuous availability of the instance services.
+
+Remember that even if you disassociate an elastic address, it is still assigned to your Amazon account until release.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fb8d_without-elastic-ip/without-elastic-ip.png)
+
+### Allocating an Elastic IP to your Amazon account
+You can allocate the elastic IP address from two places.
+
+* Amazon’s pool of public IP address
+* Custom IP addresses bought for your Amazon account.
+
+To allocate an elastic IP, from navigation page:
+
+* Select the elastic IP
+* Choose Allocate Elastic IP
+* Select scope as either VPC or EC2-Classic.
+* If you choose VPC, then select which public IP address pool you would like to choose.
+* Click Allocate.
+
+### Associating an Elastic IP to an instance
+In the Elastic IP page,
+
+* Select the Elastic IP.
+* Select Associate Elastic IP address from the Action dropdown.
+* Choose an instance in the resource type.
+* Enter the instance name.
+* Click Associate.
+
+### Disassociating an Elastic IP from an instance
+In the Elastic IP page,
+
+* Select the Elastic IP
+* Select Disassociate Elastic IP address from the Action dropdown.
+* Click Disassociate
+
+### Release an Elastic IP
+An Elastic IP should always be associated with an instance. You will be charged for the unused elastic IP. To avoid this, you can release the elastic IP back to the pool. To do this:
+
+* Select the Elastic IP.
+* Select Release Elastic IP addresses from the Action dropdown.
+* Click Release.
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
