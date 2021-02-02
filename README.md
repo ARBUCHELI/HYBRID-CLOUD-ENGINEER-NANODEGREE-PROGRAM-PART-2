@@ -512,3 +512,8 @@ What is the benefit of multiple availability zones?
 True or False: Availability zones are isolated from each other and are not connected.
 
 * False
+
+
+
+
+# Adaptation as a repository: Andrés R. Bucheli.
