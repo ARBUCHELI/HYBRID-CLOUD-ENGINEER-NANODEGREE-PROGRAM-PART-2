@@ -1082,5 +1082,23 @@ An Elastic IP should always be associated with an instance. You will be charged 
 * Select Release Elastic IP addresses from the Action dropdown.
 * Click Release.
 
+## Quiz: Elastic IP
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/500.jpg)
+
+### QUESTION 2 OF 3
+True or False: when an instance restarts, a new public IP address is allocated to the instance from the public IP address pool.
+* True
+
+### QUESTION 3 OF 3
+How many elastic IP addresses are available by default for an Amazon account?
+* 5
+
+
+
+
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
