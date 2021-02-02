@@ -813,6 +813,114 @@ To do this:
 * Open the .ssh/authorized_keys file and replace the public key information with the new public key.
 * Disconnect and reconnect to the instance with the new key pair.
 
+## Quiz: SSH Keypairs
+
+### QUESTION 1 OF 2
+In AWS, where are the public and private keys stored?
+
+* The public key is stored in Amazon EC2 and the private key is stored in a location of the user’s choice.
+
+### QUESTION 2 OF 2
+True or false: You can recover a private key if lost or forgotten.
+
+* False
+
+## IAM
+
+Identity and Access Management is a topic we had covered in the previous course. For a quick recap, IAM is a feature used to control access to the resources. Just like how you use role-based access control (RBAC) to provide customized access to Prism, similarly Amazon uses IAM to create roles and provide access permissions to access the AWS resource. Identity means authenticating the user and access management means authorizing that the users with the appropriate access are allowed to perform operations on the resources. IAM helps in ensuring that the right people have the right access to the AWS resources.
+
+Security groups and keypairs provide instance level security, whereas IAM provides account level security to the AWS environment. Using IAM, you can create users, groups, and roles with custom access permissions to manage your resources.
+
+When you create an Amazon account, you will be the root user of that account and also have all access permissions to all resources and services. If this account is managed by an organization running a huge number of instances and various services, administering all the services, analytics, storage consumption and security can be a cumbersome task. Thus, you may want to offload some of the responsibilities to a few administrators or business groups but also simultaneously be able to control the level of access for each of these users/groups. IAM enables you to create multiple users and groups to provide custom access permissions to the resources. This way you add multiple users to your account without compromising on security.
+
+For example, you can create a user group to provide admin access to all your storage services. You can even be more granular and create a user group with admin permissions to only access a specific S3 bucket.
+
+### User, groups and roles
+There are three types of users in IAM.
+
+* Root user
+* IAM user
+* Federate user
+
+We mentioned root users previously. Root user is the owner of the Amazon account. A root user has all access permissions to all resources in an Amazon account. A root user can create IAM and federate users.
+
+As discussed earlier, instead of using the root account for all tasks, you can create IAM users within your account in order to delegate tasks to various other users or business groups. You can authenticate an IAM user using a password or separate keypairs to login to the environment. When logged in, the IAM user will only have access to resources for which he has permissions.
+
+If there is already a set of users and groups created outside the AWS, you can federate those user identities into your AWS account. The users authenticated in this mechanism are called federated users.
+
+You can apply access permissions either to an individual user or to a group. When permissions are added at the group level, any new user added to the group will have permissions assigned to that group.
+
+### Creating a group and adding a IAM user
+IAM consists of its own console. Using IAM you can configure IAM users, groups and roles. Here we will cover the process of creating a group and adding a IAM user in a Linux instance.
+
+From the IAM console,
+
+* Browse to Groups.
+* Click Create New Group.
+* Enter a name.
+* Attach a policy that defines permissions.
+* Click Create group.
+
+To add users, browse to Users
+
+* Click Add Users.
+* Enter the username.
+* Configure the access type.
+* Select the user group to add.
+* Click Create user.
+* Click Save.
+
+### How does IAM work
+Let us next look at how IAM works:
+
+There are three primary elements involved when authenticating and authorizing a user. These are principal, request and AWS resources.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63faf6_iam-image1/iam-image1.png)
+
+A “principal” can be any user or application that requires access or needs authentication and authorization to perform an action on an AWS resource. AWS resources can be any asset that a principal needs access to perform an operation or an action.
+
+For a principal to perform an action on the AWS resource, it sends a ‘request’ to AWS. AWS collects the information provided in the request as a request context to analyze and authorize the request.
+
+A request consists of:
+
+* Actions or operations: This can be as simple as starting an instance or as sensitive as changing the password.
+* Resources: The AWS resource can be a user, an Amazon EC2 instance or even an Amazon S3 bucket on which the principal would like to perform an action.
+* Principal: The principal can be a user or an application sending the request. This information helps AWS to evaluate the permission associated with the principal.
+* Environment data: This includes data such as time, user agent, SSL enabled status, etc.
+* Resource data: This can be additional data regarding the resource such as a tag for Amazon S3 instance.
+
+The authentication and authorization happens before sending a request to AWS. A principal must be an identified user/application with the required permissions to send a request to an AWS resource.
+
+The authentication method depends on the principal making a request. A root user uses the Amazon account email ID and password to authenticate. Whereas an API uses the access and secret key to sign in.
+
+If a principal authentication fails the request will automatically be denied. If a principal authentication succeeds, AWS then uses the request to authorize the action.
+
+During authorization, AWS evaluates the request context created to process all policies associated with that request. Even if one of those policies associated with a request denies the action, the entire request will be denied. There are different types of policies. The policies evaluated during authorization depend on the type of request. If the request is to grant permissions to a resource, then identity-based policies are evaluated to check access permissions for a user. If a principal needs access to a resource, the resource-based policies are evaluated to check whether the principal is mentioned in the policy.
+
+The evaluation logic for any request in an AWS account is as follows:
+
+* All requests are denied by default.
+* Any exclusive allow permissions override the default.
+* Any organization security control policies or session policies overrides the allow permissions.
+* You can even exclusively deny permissions. If a policy contains a deny, it overrides all allow permissions.
+
+Once the principal is authenticated and the request is authorized, the request is approved to perform the action or operation on the AWS resource.
+
+### Accessing IAM
+IAM can be access in one of the following 4 ways:
+
+* AWS management console
+* AWS command line tools
+* AWS SDKs
+* IAM HTTPS API
+
+### Use case
+One of the primary used cases of IAM is multi factor authentication (MFA). As the name says its multiple levels/factors to authenticate a user. IAM is used in scenarios, where you would like to add an extra layer of security to your assets.
+
+When you enable MFA, you will use the username and password to login to your user account. This serves as the first factor of authentication. Once you enter the username and password, you will also be prompted to authorize using a virtual MFA device. This serves as the second factor of authentication.
+
+This way even if the password is leaked, the user will not be authenticated as the second factor of authentication cannot be passed.
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
