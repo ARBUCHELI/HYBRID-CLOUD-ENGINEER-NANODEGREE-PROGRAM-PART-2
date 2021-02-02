@@ -750,7 +750,68 @@ Which below are the two default security rules for the default security group?
 
 ## SSH Key Pairs
 
+SSH key pairs are used to authenticate a user to access a linux instance. It is an added security feature that lets you use key pairs to login to the instance. Just like how Calm enables you to use SSH key pairs from RSA for Linux systems, Amazon also supports the use of SSH key pairs.
 
+Key pairs are security credentials required to login to your instance. The word ‘key pair’ in its name signifies that there are two keys that work hand in hand to authenticate a user. For Linux systems, the public key encrypts the login information and the private key is used to remotely connect to the instance using SSH. In AWS, the public key is stored in Amazon EC2 and the private key is stored by the user. Private key is unique and confidential to a given instance. Anyone who knows the private key can access an instance. So, ensure that the private key is kept confidential.
+
+You are allowed to specify an instance key pair when you launch an instance. During the launch, you have the option to either choose an existing key pair or create a new one. When an instance boots for the first time, the public key is placed in ```~/.ssh/authorized_keys``` under your instance entry. You will have to enter the private key to login to your instance.
+
+Remember that the private key is not stored anywhere in EC2 and there is no way to recover a private key in case you forget it.
+
+### Creating a keypair
+As mentioned previously you can use an existing key pair or create a new one in order to use SSH to login to your instance.
+
+You can create a key pair using one of the following interfaces:
+
+* New console
+* AWS CLI
+* Old console
+* PowerShell
+
+We will cover the process using the new console.
+
+* Open the Amazon EC2 console.
+* Browse to Network and Security, choose Key Pairs.
+* Enter a name and select the file format.
+* Click create key pair.
+
+The keys that Amazon EC2 uses are 2048-bit SSH-2 RSA keys. The private key file is downloaded by your browser. Ensure to save it in a safe place. The file will have the name and format you specified.
+
+In case you are using a MacOS or a Linux system, execute the following command to set read permissions of your private key. If this process is not done, then you cannot connect to your instance using the key pair.
+
+```chmod 400 my-key-pair.pem```
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fa8a_creating-a-ssh-keypair/creating-a-ssh-keypair.png)
+
+### Importing the public key to Amazon EC2
+In this case, you would use an existing key pair by importing the public key to the EC2. Let’s look at the process in more details:
+
+When you already have a key pair, ensure to save the private key in a secure place and the public key in your local drive.
+
+* Open the Amazon EC2 console.
+* Browse to key pairs.
+* Enter a name.
+* Import the public key either by uploading the file or pasting the public key.
+* Choose Import key pair.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fab7_importing-a-ssh-pair/importing-a-ssh-pair.png)
+
+### Retrieving the public key for a key pair
+You can retrieve the public key for a key pair using the following command.
+
+```ssh-keygen -y -f <path to private key>```
+
+You can also retrieve it using the instance metadata file. Refer to the AWS documentation on key pairs for more details.
+
+### Replacing a key pair
+There may be situations where someone has access to the private key or you might want to restrict access to the user having the private key. In these situations, you can replace the key pair and this prevents the user from accessing the instance.
+
+To do this:
+
+* Create a new key pair.
+* Connect to the instance with the existing key pair.
+* Open the .ssh/authorized_keys file and replace the public key information with the new public key.
+* Disconnect and reconnect to the instance with the new key pair.
 
 
 
