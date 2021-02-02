@@ -739,4 +739,19 @@ For instances that run as database servers, you must configure the security rule
 
 Similarly, you can configure outbound traffic to restrict all outbound traffic and only allow access to the internet for software upgrades. You can do this by adding outbound rules to add port 80 and specifying the source IP accordingly.
 
+## Quiz: Security Groups
+
+### QUIZ QUESTION
+Which below are the two default security rules for the default security group?
+
+* Allows all incoming traffic from the instances associated with the default security group.
+
+* Allows all outgoing traffic from the instance.
+
+## SSH Key Pairs
+
+
+
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
