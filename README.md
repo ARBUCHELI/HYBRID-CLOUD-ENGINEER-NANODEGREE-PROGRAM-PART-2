@@ -615,7 +615,128 @@ What does an AMI consist of? Select the 3 options that apply.
 * Permissions
 * Role mappings
 
+## Security Groups
 
+Despite its flexibility and low costs, security has been a primary concern for organizations that host data on the public cloud. Many companies have faced security threats, hijacks, and data breaches by not using adequate security measures to save sensitive information on the cloud. Today, cloud providers have multitudinous features and technologies that enable you to safeguard the data on cloud services.
 
+Amazon includes close to 230 security, compliance, and governance services and features that help customers breathe a sigh of relief and focus on innovation. From this topic onwards, we will explore various such features that AWS provides in order to not only protect the information but also ensure that authorized users have access to it.
+
+### What are security groups
+A security group is a network security feature that enables you to control the incoming and outgoing traffic from an instance. Security groups provide protection at the instance level.
+
+Think of security groups as a firewall. Just like how a firewall gauges the incoming and outgoing traffic, the security groups enable you to control the IP addresses, protocols, and ports that can be used to reach an instance. This is done by defining rules for a security group. You can assign different rules to each security group based on your requirement. An instance is assigned with one or more security groups.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fa0a_security-groups/security-groups.png)
+
+During the launch of an instance, you can specify one or more security groups. When an incoming traffic arrives at an instance, an Amazon EC2 evaluates all rules associated with all the security groups of an instance. This evaluation decides whether to allow the incoming traffic.
+
+### Security Rules
+As mentioned earlier security rules define the traffic that’s allowed to reach an instance and the traffic that’s allowed to exit an instance.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fa30_security-groups-image1/security-groups-image1.png)
+
+When you create a security group, it consists of two tabs, inbound and outbound. You can use each of these tabs to specify security rules for incoming and outgoing traffic. Here is what a security rule consists of:
+
+* Name: A name to the security rule.
+* Protocol: TCP, UDP, or ICMP.
+* Port range: Single or range of port numbers to be allowed.
+* Source(inbound) or destination(outbound): The source and destination IP addresses allowed for an instance.
+* Description: Acts as an identifier to the rule.
+
+In this section, let’s look at some of the properties of a security group rule and then explore what a security group rule consists of.
+
+* By default, all outbound traffic is allowed inside a security group. Thus, using rules, you can restrict the outbound traffic to only the specified IP addresses.
+* You cannot create rules to restrict traffic but can only specify rules to admit traffic.
+* When a rule is modified, the changes are applied automatically to all the instances associated with a security group.
+* If an instance sends a request, the outgoing traffic for that request and the incoming response traffic is allowed irrespective of the security rules.
+* When multiple security rules are assigned to an instance, all rules are accumulated to form a large set. This huge set is evaluated by Amazon EC2 to determine access to an instance.
+
+Let’s explain this further with an example.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fa57_security-groups-image2/security-groups-image2.png)
+
+Consider an instance with a security group that has an inbound rule to allow traffic from an device IP address XX.XX.XX.XX on port 22 and an outbound rule to allow all outgoing traffic.
+
+When an incoming traffic from the device with public IP address XX.XX.XX.XX reaches the security group, it is allowed to reach the instance using port 22. This is because the devices’ port and public IP address is mentioned in the security rule of the instance. But, when a device with an IP address YY.YY.YY.YY tries to reach the instance using the same port 22, the traffic is restricted. This is because, during evaluation, the EC2 instance did not find the public IP address YY.YY.YY.YY in the inbound rule. Thus, for an incoming traffic to communicate to the instance all incoming security rules have to be passed.
+
+You can see from the diagram that all outbound traffic is allowed to pass through the security group.
+
+Inorder to track the incoming and outgoing traffic of an instance, security groups use connection tracking. But there is an exception. Not all traffic is tracked. For example, when a request is sent from an instance. The outgoing request is tracked as a new entry but the incoming response to the request is not tracked. For more information, refer to the connection tracking section in the Amazon EC2 security groups.
+
+### Types of Security Groups
+There are 2 types of security groups, default, and custom security groups.
+
+### Default security group
+
+Every Amazon account includes one default security group in a given region. If not explicitly specified, every instance uses the default security groups containing default security rules.
+
+A default security group is identified with the name default. The default security rules of the default security group are:
+
+* Allows all incoming traffic from the other instances associated with the default security group.
+* Allows outgoing traffic from the instance.
+
+You can add or remove security rules for a default security group but cannot delete a default security group.
+
+### Custom security group
+
+If you have specific requirements in mind, you can create your own security groups with custom rules. You can then associate this security group to an instance during its launch.
+
+By default, when you create a security group, it allows no incoming traffic and allows all outgoing traffic. You can modify this later once associated with an instance.
+
+### Creating a Security Group
+You can create a security group using Amazon management console (old and new), or command line. Here we will cover the process using the new console.
+
+* Browse to Security Groups.
+* Click Create security group.
+* Enter a name and description
+* Select the VPC (For now, think of VPC as the network used to connect to the cloud).
+* Add security group rules.
+* Click Create.
+
+### Creating a Security Group Copy
+A security group cannot be copied across regions. You can use the copy feature to replicate a security group and make further customization without having to create one from scratch.
+
+To create a copy of the security group:
+
+* Browse to the security groups section.
+* Select the security group.
+* Click Copy to new security group, from the Actions dropdown menu.
+* Click Create.
+
+### Adding rules to a Security Group
+You can add inbound and outbound rules to a security group.
+
+### Adding an inbound rule
+
+To do add an inbound rule,
+
+* Select the security group.
+* Click Edit inbound rules from the Actions dropdown.
+* Click add rules.
+* Choose a type and source. Enter a description.
+* Save the rule.
+
+In the source section, you have three options.
+
+* Custom: This option allows you to specify specific IP addresses from which you want to allow the incoming traffic.
+* Anywhere: This allows all incoming traffic.
+* My IP: This option you will only allow communication from your personal computer by specifying its public IPv4 address.
+
+### Adding an outbound rule
+
+The process is very similar to adding an inbound rule, simply select Edit outbound rules from the Actions dropdown.
+
+Instead of selecting the source, here you will have an option to select the destination from which you can allow the outbound traffic. You have the same three options: custom, anywhere and my IP. Configure as per your requirement and save the settings.
+
+You can use the same process to edit the inbound and outbound rules.
+
+### Web server and Database Server Security Rules
+When configuring security rules, you need also consider the purpose of the instance. As this influences the type of security rule you define.
+
+For instances that run as web servers, the inbound rules have to allow all traffic from HTTP and HTTPS access from any IP address. For example, you have to add an inbound rule with port 80 and 0.0.0.0/0 as source IP to allow all inbound traffic from any IPv4 address.
+
+For instances that run as database servers, you must configure the security rule with the appropriate port number and add the range of IP addresses that you can allow for incoming traffic. For example, you have to configure an inbound rule with port 1433 to enable access to a Microsoft SQL Server database.
+
+Similarly, you can configure outbound traffic to restrict all outbound traffic and only allow access to the internet for software upgrades. You can do this by adding outbound rules to add port 80 and specifying the source IP accordingly.
 
 # Adaptation as a repository: Andrés R. Bucheli.
