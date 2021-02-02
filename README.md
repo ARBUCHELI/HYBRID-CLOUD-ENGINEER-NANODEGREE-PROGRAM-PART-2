@@ -998,6 +998,13 @@ Another use case is moving your organization's application to the cloud without 
 
 The VPC concept is vast and a few topics are out of the scope of this course. If you want to know more on these topics, refer to the links in the further research section.
 
+## Quiz: VPC
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/494.jpg)
+
+### QUESTION 2 OF 2
+For a given Amazon account, how many VPCs are available by default?
+
+* 1
 
 # Adaptation as a repository: Andrés R. Bucheli.
