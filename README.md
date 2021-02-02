@@ -1017,8 +1017,11 @@ For a given Amazon account, how many VPCs are available by default?
 
 ## Exercise Solution - Set Up AWS
 
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=osFQu5GFSRg&feature=emb_logo)
 
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=azNmNKcLOgQ&feature=emb_logo)
 
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=a05CTelIAeE&feature=emb_logo)
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
