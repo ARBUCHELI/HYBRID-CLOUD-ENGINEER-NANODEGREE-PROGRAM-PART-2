@@ -1311,6 +1311,26 @@ If you want to configure an AWS C2S provider, refer to this link for more detail
 
 ![](https://video.udacity-data.com/topher/2020/September/5f63fe9d_configuring-aws-setting-calm/configuring-aws-setting-calm.png)
 
+## Scalability and Global Load Balancing Considerations
+
+Load Balancing, as you may remember from a previous course, is a system that distributes traffic across multiple resources, which are typically servers. When these servers are in geographically distributed datacenters, the act of distributing traffic between them is called Global Load Balancing.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fec4_global-load-balancing/global-load-balancing.png)
+
+Global load balancing is a very real, very practical scenario for a lot of businesses once they reach a certain size and scale. For high availability purposes, businesses simply cannot risk having all of their data, applications, and systems in a single physical location. A secondary datacenter, or multiple secondary datacenters, are set up to ensure business continuity and protect and preserve data in the event of a natural disaster or major failure.
+
+Then, to fulfil jurisdictional, regulatory, or performance requirements, some businesses need to set up and operate multiple datacenters. As an example, to ensure data privacy under law, it may be necessary to keep European data in Europe. On the other hand, for performance reasons, it may be necessary to have the Asian arm of a business supported by one or more datacenters in Asia.
+
+Either way, distributing and managing traffic on a global scale is ongoing, daily consideration for most businesses. However, as with all things in computing, solving problems at scale takes on an entirely new dimension, more so when that ‘scale’ is quite literally planet Earth.
+
+Some considerations that you need to be aware of in the context of global load balancing are:
+
+* When scaling up or down, global resources need to be scaled with demand, so extra apps, network load balancers, instances (VMs, AMIs, etc.) and even regions/geos need to be dynamically scaled.
+* Automation, tagging, governance/compliance for security, management and reporting, etc. all have to scale up/down with the global resources listed previously.
+* Basic infrastructure needs, such as public IPs, and DNS A/C/MX records, need to be modified as resources scale up or down.
+* Data can be sharded and replicated for availability and access needs.
+* Different cloud failover models apply: pilot light, A/B failovers (primary/secondary), cold/warm/hot failover models, or even “always-on” where session traffic is routed to surviving instances.
+
 
 
 
