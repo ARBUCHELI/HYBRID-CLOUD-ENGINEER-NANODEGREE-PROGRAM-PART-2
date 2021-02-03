@@ -1213,5 +1213,37 @@ Virtual Private Cloud is a service where you can provision and launch an isolate
 ### t3.micro and t2.micro - 
 t3.micro and t2.micro are free tier instance types that are available in Amazon EC2 free tier.
 
+## Lesson Conclusion
+
+To conclude, public cloud is evolving and many organizations have now been able to seamlessly run their workloads on public cloud. Although there were initial challenges such as poor connectivity, loss of control, and lack of trained staff, with improved technologies, public cloud has now been a feasible option for many small and large scale businesses.
+
+In this lesson, AWS was our primary focus. We started the lesson by explaining AWS and also introduced you to various services. We then covered one of the most widely used services of AWS, which is Amazon EC2.
+
+Amazon EC2 is a compute service used to run various virtual servers. These virtual servers are called instances. Instances can host applications and run OS and databases. Instances are created using an image called the Amazon Machine Image. Amazon Machine Image(AMI) contains all necessary configuration details required to launch an instance. A single AMI can be used to launch multiple instances. When launching an instance using an AMI, an instance type must be selected. The instance type defines the hardware configuration used to run an instance.
+
+Amazon provides free hands on services, platforms, and products. This is called a Free Tier. T2 and T3 are free instance types available in the Amazon EC2 free tier.
+
+In order to provide data locality, Amazon uses regions and availability zones. With multiple regions and availability zones you can now host workloads closer to the region in which the account is created. This feature helps in meeting the local compliance and governance requirements.
+
+An EBS backed AMI contains a snapshot of EBS, permissions, and device mapping. We then covered 2 ways to create an AMI. We also explained the difference between these methods.
+
+We then explore various security features such as security groups, key pairs, IAM, VPC and elastic IPs.
+
+Security groups are firewalls used to control the incoming and outgoing traffic of an instance. Security groups use security rules to configure the inbound and outbound traffic. Security groups provide instance level security in the Amazon EC2 environment.
+
+SSH keypairs are key pairs used to authenticate a user. It involves a public and private key. Public key is stored in EC2 and the private key is stored by the user.
+
+IAM provides benefits very similar to the role-based access control (RBAC) in Prism. IAM provides a mechanism to control access to Prism and also create multiple users, groups and roles to manage the Amazon environment. We covered how an IAM works and also explored the steps to create an IAM.
+
+We then covered what a Virtual Private Cloud is and how a VPC works. Virtual Private Cloud is the network security feature for your cloud. If EC2 is your compute layer then VPC is your network layer. VPC helps in providing complete control of the network connecting the cloud. This way you can achieve high standards of network security even on public cloud.
+
+Elastic IP is a feature used to manage an instance failure. It eliminates the dependency on the dynamic public IP address of an instance.
+
+With all these security features provided, public cloud is less vulnerable to security attacks and breaches. By implementing these features you can not only secure the environment at the cloud level but also at the instance level.
+
+In the next lesson, we will cover how to implement a hybrid cloud scalability and deployment choices for a web application. We will also explore how to configure a hybrid web tier blueprint. We will discuss how to operate the load balancers across public and private cloud web tiers in a blueprint.
+
+<strong>Note:</strong> All other brand and product names mentioned herein are for identification purposes only and may be trademarks of their respective holders.
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
