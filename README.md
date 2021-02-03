@@ -1094,6 +1094,38 @@ True or False: when an instance restarts, a new public IP address is allocated t
 How many elastic IP addresses are available by default for an Amazon account?
 * 5
 
+## AWS Limitations
+
+Although AWS includes features that secure your workloads, there are a few limitations that you need to consider while hosting your data on cloud.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fcd4_aws-limitations/aws-limitations.png)
+
+### Transfer costs:
+We covered how a few AWS services are charged based on the hours of usage in the Amazon free tier section. Know that, Amazon charges to transfer out of the AWS environment as well. For example, uploading a file to Amazon S3 is free, but downloading the same file to your on premise environment/local system has a cost associated with it. This cost varies based on the region in which the data is hosted on. You may also have to pay to transfer data between regions as well.
+
+### Application refactoring:
+When moving applications from one cloud environment to the other, the applications are usually re-architectured or a major amount of code is modified in order to adapt to the new environment. This process is called application refactoring. It is a time consuming process, as you have to modify the application without affecting the behavior and efficiency of it. Thus it is important to decouple your application from the underlying platform.
+
+### Control on hardware: 
+Although, there are several features and functionalities to ensure that applications on cloud are always available, still many organizations are not too sure when they want to host their mission critical application on a public cloud. Public cloud does not provide the ability to control the hardware parameter for mission critical workloads.
+
+These limitations are actually considerations to keep in mind while architecting your cloud environment. Nutanix has products such as Nutanix clusters on AWS, Calm, and Beam that enables you to seamlessly work on applications both on-premise and on cloud.
+
+Nutanix Clusters is a cloud platform that extends the simplicity and ease of use of its software to the public cloud. This eliminates the cost and management complexity of hybrid environments and enables seamless mobility across private and public clouds without any rearchitecting of the apps due to built-in networking integration with AWS. Nutanix clusters can be added and controlled from Prism Central. This makes Prism Central a single hybrid cloud control pane.
+
+Nutanix Clusters help you decouple applications from the underlying platform, it also helps you decouple your business investments from the underlying platform. You have the freedom to use your portable Nutanix software licenses to the cloud of your choice. Calm as you know enables you to automate provisioning, scaling, and life cycle management of applications for the cloud. On the other hand, Nutanix Beam optimizes your resource allocation, reducing cloud costs.
+
+## Quiz: AWS Limitations
+
+### QUIZ QUESTION
+What are the limitations of using AWS? Select the three limitations that we discussed in this topic.
+
+* Application Refactoring
+
+* Lack of control on hardware
+
+* Transfer costs
+
 
 
 
