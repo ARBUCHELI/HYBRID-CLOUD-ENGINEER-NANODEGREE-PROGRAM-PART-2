@@ -1145,5 +1145,11 @@ What are the limitations of using AWS? Select the three limitations that we disc
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/506.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/507.jpg)
 
+## Exercise Solution: Deploy to AWS
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=r7rteHoDqDU&feature=emb_logo)
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=Zn3Lv9GvXSs&feature=emb_logo)
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
