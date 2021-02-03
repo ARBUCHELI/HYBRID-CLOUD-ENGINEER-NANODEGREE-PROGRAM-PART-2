@@ -1331,6 +1331,57 @@ Some considerations that you need to be aware of in the context of global load b
 * Data can be sharded and replicated for availability and access needs.
 * Different cloud failover models apply: pilot light, A/B failovers (primary/secondary), cold/warm/hot failover models, or even “always-on” where session traffic is routed to surviving instances.
 
+## Global Load Balancing Between Infrastructure Providers
+
+Since global load balancing isn’t a new concept, infrastructure options are already available to you. However, when making this decision, you need to weigh the options that you have and choose the one that best suits your business’ and application’s requirements.
+
+One of the first choices you’ll find yourself making is whether to invest time, effort, and other resources into public cloud load balancers, whether to use something open source like HAProxy, or whether to work with a different solution provider entirely such as F5. Then, when you’re making that decision, you also need to think about whether you want a hardware-based solution, which is what F5 offers, versus a load balancer service, which Cloudflare provides. And finally, you also need to consider how you want to load balance between clouds, at what layer you want to load balance, and why.
+
+Ultimately, there is no right answer. The only answer that matters will be derived from your assessment of your infrastructure and business requirements, which will lead to an understanding of what works best for your specific situation. So, very quickly, let’s go over some of the global load balancer options that are available to you.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ff53_load-balancer-options/load-balancer-options.png)
+
+### AWS Elastic Load Balancer
+Elastic Load Balancing (ELB) can be used with an Amazon ECS service to ensure that traffic is distributed evenly. ELB supports three types of load balancers: Application, network, and classic.
+
+### Application Load Balancer
+An Application Load Balancer makes routing decisions at the application layer, i.e., HTTP/HTTPS. It supports dynamic host port mapping, path-based routing, and is capable of directing requests to different ports on each container instance in a cluster.
+
+### Network Load Balancer
+A Network Load Balancer makes routing decisions at the transport layer, i.e., TCP/SSL, and is capable of handling millions of requests in a second. Like Application Load Balancers, Networking Load Balancers also support dynamic host port mapping.
+
+### Classic Load Balancer
+Functioning as something of a hybrid model, a Classic Load Balancer is capable of making routing decisions at either the application layer or the transport layer. However, a Classic Load Balancer needs a fixed relationship between the load balancer port and the container instance port. To ensure that this condition is met, your cluster will need at least as many container instances as the desired count of a single service that uses a Classic Load Balancer.
+
+### HAProxy
+HAProxy, which stands for High Availability Proxy is an open source load balancer and proxy server that is typically used for TCP and HTTP-based applications. It’s free, has become the standard for open source load balancing, and comes bundled with most Linux distributions. Since it’s a software-based load balancing solution, it balances requests using a variety of algorithms for server allocation.
+
+### F5
+Unlike the other load balancers we’ve discussed here, the F5 series of load balancers are hardware-based. That is, they are physical devices that distribute traffic across servers.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/511.jpg)
+
+## Architecting for Access
+
+When designing a greenfield application, the hybrid cloud engineer will have a multitude of choices available to filter through business requirements then additional technical, fiscal, and security concerns.
+
+Access becomes a primary design criterion for security and hybrid cloud provider choice: who can access what and from where?
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ffd7_when-access-is-a-primary-design-criterion/when-access-is-a-primary-design-criterion.png)
+
+A global audience for a web application typically requires access to a public front-end, but successive back-end functionality and supporting services, such as business logic, SaaS offerings, databases and other persistent storage should be protected from direct public access. Increasingly, mobile and desktop applications also require network access to reach back-end services. Private applications typically use the same architecture, but access can be restricted to corporate Local Access, Wide Area, and Virtual Private networks (LAN, WAN, VPN).
+
+Variations of VPNs can be established between corporate networks and the private network address space of public cloud providers. For example, AWS Virtual Private Cloud (VPC) establishes IPsec network tunnels to “extend” the corporate data centers and private networks seamlessly to public cloud hosted services to satisfy corporate network access requirements. Of course, these public cloud hosted services must not be given public access in order to assure secure access.
+
+Given that workloads can be placed anywhere, a hybrid cloud engineer should consult with network and security specialists to ensure access and geographic hosting considerations are addressed. Example requirements could include keeping customer information private and geographically constrained for data sovereignty or data may be transmitted globally in a secure fashion, but must be stored at rest on corporate owned and secured resources in a private cloud or on a highly audited public cloud.
+
+Network performance also weighs on choosing where to place workloads, further driving the need for livestock fleets to be geographically distributed and placed as closely as possible to the customer. However, vastly distributed resources also place a network transit burden to reach supporting services as well as overhead to synchronize and replicate data between each cloud, which can have performance and cost implications.
+
+Securing access while maintaining local access across hybrid, distributed resources can often create conflicting design decisions for a hybrid cloud engineer. Often these design decisions come down to network locality and data locality (sometimes also called data gravity). These decision points should be arbitrated by adhering to business requirements and working to bring any ambiguity or gap back to the business for resolution.
+
+For this lesson’s exercise, the load balancer will remain on the private cloud for secure access. The hybrid web tier will be hosted on private cloud AHV and public cloud AWS. Both web tiers will need to access the database. It would be possible to allow AWS web tier access to a private cloud database via AWS VPC, but an easier design for this exercise will be to rehost the database on public cloud AWS and adjust AWS security groups to allow access from the Nutanix AHV cluster. The database must be available to all web servers, regardless of where they are hosted. Because of the ephemeral nature of your Nutanix AHV cluster outside of AWS, global network access must be granted for the database. Global access to a database is not a security best practice, but acceptable to simplify this learning exercise. A final warning: remember to delete your application workloads before leaving your session, your AWS resources will persist until explicitly terminated! If you forget to do so, your Nutanix resources will terminate automatically, but you will need to use the AWS web console to manually terminate AWS EC2 instances in your account.
+## Quiz: Global Load Balancing
+
 
 
 
