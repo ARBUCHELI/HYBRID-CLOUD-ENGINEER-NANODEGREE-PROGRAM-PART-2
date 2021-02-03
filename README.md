@@ -1247,4 +1247,71 @@ In the next lesson, we will cover how to implement a hybrid cloud scalability an
 <strong>Note:</strong> All other brand and product names mentioned herein are for identification purposes only and may be trademarks of their respective holders.
 
 
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# LESSON 3 IMPLEMENTING HYBRID CLOUD SCALABILITY AND DEPLOYMENT CHOICE 
+
+## Lesson Overview
+
+Welcome to the lesson, Implementing Hybrid Cloud Scalability and Deployment.
+
+In the previous lesson we dived deep into AWS so that you have a strong foundation for how the public cloud works - in the same way that we’ve talked about the private cloud in this course.
+
+That was really the second piece of the puzzle. If you remember, Calm helps seamlessly orchestrate your workloads between on-prem infrastructure and your public clouds, like AWS. So, in this lesson, we will use your combined knowledge of both the public and the private cloud to discuss matters of scale - specifically, hybrid cloud scalability.
+
+Now that you’re familiar with AWS, we’ll jump right into extending your blueprint into the hybrid cloud by talking about how you add an AWS provider to Calm.
+
+Next we’ll move on to global load balancing - what it is, why it matters, the considerations involved, and what global load balancing looks like for different infrastructure providers.
+
+We will also discuss the considerations involved when you need to think about how your audience will access your application - such as the nature of the application, VPNs, geographical considerations, network performance, and network and data locality.
+
+And finally, we will recap a couple of concepts covered under application profiles, all of which you will need to keep in mind when scaling your application.
+
+Let’s jump right in.
+
+## Big Picture
+
+The goal for effective scalability and deployment choices is to ensure tasks are managed in an efficient time-sensitive manner, as orchestrated in the blueprint, rather than in a manual, ad-hoc, reactive manner. In the <strong>On-Premises Private Cloud Automation</strong> course, you learned about some of the strategies that can be applied to Hybrid Cloud Management and had time to think about how those strategies apply to effective decision making.
+
+By thinking about how applications and deployment strategies can apply for different, but related manners irrespective of the cloud environment running an application, it became apparent how planning these strategies can impact application lifecycles at later stages.
+
+In essence, these strategic planning initiatives can help drive the adoption of application-specific technologies such as Cloud-Init for configuration automation and shell tasks for task automation, while also opening the door to considering domain-specific automation approaches such as the Nutanix Calm DSL and runbooks.
+
+In previous lessons, the idea of domain-specific tools, typically locked to a single infrastructure provider, being not-so-desirable was discussed, although there is certainly a place for certain technologies that follow this pattern, if they can aid in improving application agility and lifecycle management. As an example, the Nutanix Calm DSL, when applied to Nutanix Calm specifically, won't apply to improving lifecycle efficiency in other products, but can allow some tasks that were otherwise repetitive and complex to be distilled down to a much similar approach. From another angle, the use of the Nutanix Calm DSL to automate runbook execution is an excellent way of streamlining the scalability and deployment decisions that are critical to this lesson.
+
+## Developing Your Intuition
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/510.jpg)
+
+In this lesson, we'll explore a number of ways that scalability and deployment decisions can be planned strategically and efficiently without sacrificing the domain knowledge that most automation engineers have spent so long to develop.
+
+As an example, what happens when the web component of a web application requires additional resources? This lesson will demonstrate how this can be achieved quickly and efficiently, thereby avoiding the need for manual resource deployment.
+
+## Adding an AWS Provider to Calm
+
+Let’s begin by discussing how to add an AWS provider to Calm.
+
+You must configure AWS as a service provider if you want to create and use a blueprint on AWS platform.
+
+Before you begin, ensure that you have an AWS account with valid credentials. You must also have an IAM user account. The User account must have full EC2 access and IAM read-only access. Additionally have an access key ID and the secret access key for the IAM user account.
+
+To configure AWS as a provider:
+
+Click the settings icon
+Click the Providers tab.
+Provide details such as name, type, access key ID, secret access key, regions, and a public image.
+Click Save
+You can even click Verify to verify the entered credentials.
+
+You can use the configured AWS provider when you create a blueprint for AWS.
+
+If you want to configure an AWS C2S provider, refer to this link for more details.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63fe9d_configuring-aws-setting-calm/configuring-aws-setting-calm.png)
+
+
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
