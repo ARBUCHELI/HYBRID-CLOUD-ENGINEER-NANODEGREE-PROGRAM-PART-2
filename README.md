@@ -1406,6 +1406,10 @@ For this lesson’s exercise, the load balancer will remain on the private cloud
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=RFBAUL8_VxM&feature=emb_logo)
 
+## Exercise: Migrating Database Access
+
+
+
 
 
 
