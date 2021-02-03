@@ -1359,6 +1359,8 @@ HAProxy, which stands for High Availability Proxy is an open source load balance
 ### F5
 Unlike the other load balancers we’ve discussed here, the F5 series of load balancers are hardware-based. That is, they are physical devices that distribute traffic across servers.
 
+## Quiz: Global Load Balancing
+
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/511.jpg)
 
 ## Architecting for Access
@@ -1380,7 +1382,7 @@ Network performance also weighs on choosing where to place workloads, further dr
 Securing access while maintaining local access across hybrid, distributed resources can often create conflicting design decisions for a hybrid cloud engineer. Often these design decisions come down to network locality and data locality (sometimes also called data gravity). These decision points should be arbitrated by adhering to business requirements and working to bring any ambiguity or gap back to the business for resolution.
 
 For this lesson’s exercise, the load balancer will remain on the private cloud for secure access. The hybrid web tier will be hosted on private cloud AHV and public cloud AWS. Both web tiers will need to access the database. It would be possible to allow AWS web tier access to a private cloud database via AWS VPC, but an easier design for this exercise will be to rehost the database on public cloud AWS and adjust AWS security groups to allow access from the Nutanix AHV cluster. The database must be available to all web servers, regardless of where they are hosted. Because of the ephemeral nature of your Nutanix AHV cluster outside of AWS, global network access must be granted for the database. Global access to a database is not a security best practice, but acceptable to simplify this learning exercise. A final warning: remember to delete your application workloads before leaving your session, your AWS resources will persist until explicitly terminated! If you forget to do so, your Nutanix resources will terminate automatically, but you will need to use the AWS web console to manually terminate AWS EC2 instances in your account.
-## Quiz: Global Load Balancing
+
 
 
 
