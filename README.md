@@ -1439,7 +1439,15 @@ Which Calm construct enables you to create multiple profiles of different size a
 
 * Application Profiles
 
+## Application Profiles Recap
 
+Application profiles are one of the primary elements involved in building a Calm blueprint. You must select an application profile while you launch a blueprint. Application profiles expose simple choices to end users. Often these choices are about where an application should run (AHV or AWS), but they can also be about sizing (small or large), or a combination of the two (small AHV or large AHV or small AWS).
+
+An application profile provides different combinations of the service, package, and VM while configuring a blueprint. The application profile also enables you to use the same set of services and packages on the different platforms.
+
+Using application profiles, you can enable your application to be run in multiple ways. You can either change the size or change the infrastructure to deploy on. Any customization you have done can be reused or tailored on a per-profile basis.
+
+## 
 
 
 
