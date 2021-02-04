@@ -1464,6 +1464,32 @@ Additional application profiles provide the operator role (or higher) deployment
 
 Use application profiles to reduce the amount of delegated run-time properties: less choice reduces complexity and increases productivity: less is more!
 
+## Quiz: Multiple Application Profiles
+
+### QUIZ QUESTION
+How does using multiple application profiles benefit an operator?
+
+* Provides deployment choices when using an application deployment.
+
+## Application Profile Best Practices
+
+### Application Profiles Best Practices
+Let us next cover some of the best practices to follow when using an application profile.
+
+### Naming an application profile
+
+* When naming an application profile make it as simple and user-friendly as possible.
+* Ensure to use nouns that reflect the audience use case or jargon. Capitalized noun, ideally without spaces. For example, UserAcceptanceTesting, QualityAssurance.
+* Also make application profiles a set of mutually exclusive choices. This increases blueprint reuse and provides deployment choices when using an application deployment.
+* Avoid overly context sensitive names that require previous knowledge when possible to allow the widest audience to understand each application profile and make the correct choice.
+
+### Example use of profile for operator choice
+
+* Recommended configurations, such as capacity size: small versus medium versus large resource consumption for different needs.
+* Limited to full configuration delegation with run-time property overrides.
+* Different infrastructure providers for a public, private, and/or hybrid deployment.
+
+Overall, application profiles serve as a powerful tool to choose from any of a multitude of different hybrid cloud deployments.
 
 
 
