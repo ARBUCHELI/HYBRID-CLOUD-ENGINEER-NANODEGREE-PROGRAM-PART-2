@@ -1752,7 +1752,22 @@ The Total Cost of Ownership (TCO) model is included in Beam and accounts for cap
 
 It is important to understand that the objective is to get the users close to a reasonably good approximation of their private cloud TCO and then give them the ability to fine tune those for accuracy. Most users do not even know all these costs so getting them to a close approximation for their private cloud TCO is a very beneficial starting point.
 
+### Cost-aware Workload Migration
+A CCMO solution needs to be able to compare workload costs across public and the private clouds. By using TCO-based costing models (described above) for such a comparison you can ensure that the comparisons are accurate and account for all cost factors contributing to a workload running on any cloud.
 
+Cost-aware workload migration involves:
+
+* Identifying the total cost of workload in a cloud
+* Comparing the cost of similarly sized workloads in other clouds
+* Making recommendations on when it would result in cost savings to migrate from private cloud to public cloud
+
+These cost comparisons need to be dynamic so that you can avoid costly sticker shock due to migrating a workload that may not be as cost effective to run in a particular cloud.
+
+## Automated Resource Rightsizing
+Your CCMO solution should also be able to automatically detect anomalous spending patterns and identify unused or idle resources. Then, to minimize manual intervention, you should also be able to create automation policies to eliminate unused resources and rightsize infrastructure to ensure optimal consumption and reduce cloud spend accordingly.
+
+### Reserved Instance Purchases
+Since reserved instances provide greater cost benefits (as we discussed earlier), your CCMO solution should be able to use your consumption history to identify the optimal reserved instance for you to purchase or exchange the reserved instances you may have already purchased from a particular type to a different type of reserved instance.
 
 
 
