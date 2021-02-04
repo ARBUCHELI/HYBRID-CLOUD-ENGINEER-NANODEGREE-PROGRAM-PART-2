@@ -1851,6 +1851,12 @@ What is Xi Beam?
 
 * A software-as-a-service product that helps customers with cost governance for both their public and private clouds.
 
+## Configuring a Cost Governance Policy in Xi Beam
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=9mZIq0fPYWU&feature=emb_logo)
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=CVnyeSycap4&feature=emb_logo)
+
 
 
 
