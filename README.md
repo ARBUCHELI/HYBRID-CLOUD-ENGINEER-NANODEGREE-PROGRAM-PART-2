@@ -1491,6 +1491,17 @@ Let us next cover some of the best practices to follow when using an application
 
 Overall, application profiles serve as a powerful tool to choose from any of a multitude of different hybrid cloud deployments.
 
+## Quiz: Application Profile Best Practices
+
+### QUIZ QUESTION
+Select the 3 best practices that have to be followed when using application profiles.
+
+* When naming an application profile make it as simple and user-friendly.
+
+* Make application profiles a set of mutually exclusive choices.
+
+* Ensure to use nouns that reflect the audience use case or jargon
+
 
 
 
