@@ -1551,6 +1551,18 @@ Specifically, we spoke about:
 
 
 
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# LESSON 4 HYBRID CLOUD FISCAL GOVERNANCE
+
+## Lesson Overview
+
+
+
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
