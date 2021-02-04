@@ -1699,6 +1699,65 @@ Read the scenario above and determine which of the two options the IT team shoul
 
 * They should proceed with both options. Both approaches offer a viable path to cost reduction and optimization.
 
+## Cost Optimization Solutions
+
+### Elements of Cost Optimization Solutions
+
+Jumping into the cloud affects your IT economic model, but jumping into more than one cloud makes the “cloud cost” question much more difficult to answer.
+
+Financial comparisons between traditional data centers and cloud infrastructure are not simple to make. It is more than just comparing the compute, storage, and network costs between them. Many hidden overheads come into play and can become the deciding factor.
+
+There are several factors that you need to consider when determining ways to reduce costs.
+
+![](https://video.udacity-data.com/topher/2020/September/5f693472_elements-of-a-cost-optimization-solution/elements-of-a-cost-optimization-solution.png)
+
+### Real-time Visibility and Analytics
+Real-time visibility and analytics are critical in helping you see the areas where you may have too much or too little in the way of resources. Either condition can be costly, especially when system performance suffers and customers are inconvenienced.
+
+Cloud Cost Management & Optimization (CCMO) tools use advanced machine learning to perform a timeseries analysis of the resource consumption log data to identify anomalous trends and usage patterns. The best CCMO tools can identify when cloud costs start to spike by looking for unexpected patterns in the billing data.
+
+For example, you should look for which users are consuming which services in which region at what time of day. Anomalous deviations should be immediately flagged when the spending goes above a certain deviation from normal patterns. Machine learning-based automated cost anomaly detection can act as an early warning signal.
+
+### Automated Budget Tracking and Chargebacks
+Another feature you want in your CCMO tools is the ability to automate budget tracking and chargebacks. CCMO tools can help to optimize spending through budget tracking and chargeback by answering these questions:
+
+* How much are you spending across your organization?
+* Which team is spending more?
+* Who — or which project — is overshooting the allocated budget?
+
+CCMOs provide budgeting tools through which enterprises can apportion the cloud costs to different business units or cost centers. This could be for a team, a project, a region, or a department.
+
+CCMO tools also provide automatic real-time budget tracking so that cost-saving actions can be taken before it is too late.
+
+### Tagging
+A tag is a label that you assign to a cloud resource. By applying tags, you add metadata to logically organize resource groups using a taxonomy.
+
+Each tag consists of a key and an optional value, both of which the user defines. AWS and Azure call them tags, and Google Cloud calls them labels. In the Nutanix private cloud, they are called Categories.
+
+CCMOs empower financial leaders in an organization to create cost centers and associate tags with them. CCMOs also help you associate budgets with the cost centers and then automatically aggregate all resource costs associated with tags for that particular cost center.
+
+This helps you track your spending against allocated budgets using flexible definitions that can be changed by altering the tags associated with a cost center.
+
+### TCO-based Cost Metering
+Nutanix has created a cost model that is comprehensive, intuitive, and automated, while also being flexible and extensible to accommodate a wide range of business needs. The model incorporates defaults based on industry averages, enabling it to deliver reasonable accuracy even without site-specific configuration.
+
+The Total Cost of Ownership (TCO) model is included in Beam and accounts for capital and operating costs in six areas, allowing you to determine the true cost of owning and operating a Nutanix private cloud solution:
+
+* <strong>Hardware:</strong> Beam analyzes your Nutanix environment and populates the model automatically, including amortizing hardware license costs for the servers you might be using.
+* <strong>Software:</strong> Software costs are amortized for all installed Nutanix software. You can optionally add costs for third-party software such as monitoring tools by adding the cost per license.
+* <strong>Facilities:</strong> Power, cooling, and datacenter space costs can be difficult for IT organizations to determine directly. Beam instead estimates power and cooling costs based on your electricity consumption and the efficiency of your datacenter while using industry-standard values for cost per kWh. Datacenter space costs are calculated based on the number of nodes in use, the number of racks needed for those nodes and the per-rack cost. The model accommodates on-premises versus co-location.
+* <strong>Telecom:</strong> Nutanix accounts for network switches and other telecom-related costs based on the number of nodes in your datacenter, the number of network switches needed based on the number of nodes and estimating the average cost of network switches.
+* <strong>Services:</strong> The model amortizes any Nutanix or third-party professional services as part of the TCO model, including both one-time and recurring costs.
+* <strong>People:</strong> The TCO model accounts for the salaries of both outsourced and internal IT administrative staff. It calculates the amount of IT admins you may need based on the number of nodes and estimates the average salary
+
+It is important to understand that the objective is to get the users close to a reasonably good approximation of their private cloud TCO and then give them the ability to fine tune those for accuracy. Most users do not even know all these costs so getting them to a close approximation for their private cloud TCO is a very beneficial starting point.
+
+
+
+
+
+
+
 
 
 
