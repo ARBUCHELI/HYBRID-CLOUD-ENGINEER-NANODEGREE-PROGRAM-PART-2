@@ -1776,7 +1776,36 @@ What is cost-aware workload migration?
 
 * It means that the CCMO solution can identify the total cost of workload in a cloud, compare the cost of similarly sized workloads in other clouds, and make cost-aware migration recommendations
 
+## Exercise: Beam Account Configuration
 
+### Exercise
+In this exercise you will identify how to onboard a Nutanix account in Beam to identify the true cost of workloads running on Nutanix Private Cloud.
+
+Note: You will not use a workspace in the classroom for this exercise.
+
+### Logging In
+
+Beam is a SaaS service and does not require any on-premises installation.
+
+* 1. Open a new browser tab and go to https://beam.nutanix.com and click Sign in with My Nutanix.
+* 2. Use hce-beam#@udacity.com as your email address. Replace # with your day of birth. E.g., if your birthday is January 5, that equates to [hce-beam5@udacity.com]. # will have values from 1 to 31. (If for any reason your login does not work, you may try a value of # = 32, 33 or 34). The password will be Nutanix1234@.
+
+Note: Prerequisites already configured for this lab include:
+
+* The Nutanix cluster being used for this lab is already licensed in the Nutanix Salesforce database.
+* Prism Pulse is enabled for the Nutanix cluster to send VM configuration details to Beam.
+* If you are not already on the Dashboard view or you are presented with the View Selector, click All Clouds in the View Selector or click the Entities menu at the upper left and select Dashboard to see the Beam default view upon login.
+
+Private Cloud Cost Metering
+
+Nutanix Account Configuration
+
+To start using Beam, you will need to configure your Nutanix account with Beam by entering an associated license key.
+
+Note: For the lab environment, the license key has already been entered.
+
+* 1. Click the Entities menu and go to Configure > Nutanix Accounts. Observe the configured license key for the Beam Lab Nutanix Account.
+* 2. Logout by clicking the username HCE Beam## and selecting Log out.
 
 
 
