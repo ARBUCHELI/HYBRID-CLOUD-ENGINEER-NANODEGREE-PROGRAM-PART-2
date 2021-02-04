@@ -1769,6 +1769,15 @@ Your CCMO solution should also be able to automatically detect anomalous spendin
 ### Reserved Instance Purchases
 Since reserved instances provide greater cost benefits (as we discussed earlier), your CCMO solution should be able to use your consumption history to identify the optimal reserved instance for you to purchase or exchange the reserved instances you may have already purchased from a particular type to a different type of reserved instance.
 
+## Quiz: Cost Optimization Solutions
+
+### QUIZ QUESTION
+What is cost-aware workload migration?
+
+* It means that the CCMO solution can identify the total cost of workload in a cloud, compare the cost of similarly sized workloads in other clouds, and make cost-aware migration recommendations
+
+
+
 
 
 
