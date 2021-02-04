@@ -1447,7 +1447,16 @@ An application profile provides different combinations of the service, package, 
 
 Using application profiles, you can enable your application to be run in multiple ways. You can either change the size or change the infrastructure to deploy on. Any customization you have done can be reused or tailored on a per-profile basis.
 
-## 
+## Quiz: Application Profiles Recap
+
+### QUIZ QUESTION
+What are application profiles?
+
+* An application profile provides different combinations of services and profile variables while configuring a blueprint.
+
+
+
+
 
 
 
