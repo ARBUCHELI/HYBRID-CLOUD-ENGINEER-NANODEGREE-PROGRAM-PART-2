@@ -1581,6 +1581,27 @@ So, in a fair amount of detail, we’re going to discuss:
 
 Thank you for making it this far in the course, and for sticking with us to the very end. Let’s begin.
 
+## Big Picture
+
+According to Gartner, “Cloud cost management is not just an operational concern. To be successful, it requires a tight collaboration among the disciplines of governance, architecture, operations, product management, finance and application development.
+
+Focusing on efficient use of cloud services brings immediate and tangible financial benefits. Unfortunately, most organizations are unprepared to profit from this savings opportunity and they’re likely to overspend.” (Source: Gartner, Inc., How to Manage and Optimize Costs of Public Cloud IaaS and PaaS, March 2020)
+
+For businesses adopting hybrid cloud architectures, this creates an unenviable scenario, managing IT costs and security across third-party cloud deployments. So what can Beam do to mitigate this?
+
+![](https://video.udacity-data.com/topher/2020/September/5f65094a_big-picture-c3-l4-nutanix/big-picture-c3-l4-nutanix.png)
+
+Beam further reduces complexity by providing users with deep visibility and rich analytics detailing how they are using the public cloud. It also provides rightsizing recommendations and detects cost anomalies based on machine intelligence along with one-click fixes so that IT teams can immediately optimize their cloud spend.
+
+IT organizations get a clear view into the entirety of their public cloud deployments so unexpected cost leaks can be addressed before they turn into business challenges. Essentially, Beam helps organizations make continuous improvements with cost savings in mind when operating multi-cloud architectures.
+
+Beam also provides out-of-the-box cost visibility into Nutanix private cloud resources (such as VMs, snapshots, files, etc.) using a built-in TCO model so that it’s easier to understand the true costs associated with Nutanix private cloud environments, as well as public cloud deployments.
+
+Beam users can see how much they are truly spending on Nutanix resources while accounting for multiple cost factors such as hardware & software license costs, facilities costs, telecom cots, IT admin salaries, etc. — all within a single management dashboard based on a configurable TCO model.
+
+And ultimately, this translates to a simple, unified global view that enables organizations to manage and optimize the cost of their entire IT infrastructure environment.
+
+
 
 
 
