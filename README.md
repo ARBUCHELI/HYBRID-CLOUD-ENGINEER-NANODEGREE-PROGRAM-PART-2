@@ -1601,7 +1601,25 @@ Beam users can see how much they are truly spending on Nutanix resources while a
 
 And ultimately, this translates to a simple, unified global view that enables organizations to manage and optimize the cost of their entire IT infrastructure environment.
 
+## Developing Your Intuition
 
+Organizations today are increasingly adopting a multi-cloud architecture that spans across private and public clouds. This provides the necessary agility and flexibility of choice needed for IT teams to quickly fulfil business needs. However, with workloads spanning public and private clouds, there is a strong need for a cost governance solution that centralizes visibility across all clouds and implements cost governance policies to keep overall IT spending within budgets.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69339e_developing-your-intuition-nutanix-c4/developing-your-intuition-nutanix-c4.png)
+
+### Summary of Challenges with Cost Governance in Adopting Multi-Cloud Architecture
+
+Cloud cost governance is more complicated than ever. The lack of consumption controls especially in public clouds results in higher costs across the board. The number of choices available — both in terms of consumption models as well as number of services that each provider has — make purchasing decisions extremely complex. Also, the manual chargeback processes that most businesses have now are inefficient simply because the complexities of a multi-cloud system make granular, manual tracking a nightmare.
+
+A key cost governance challenge in private cloud is the lack of immediate visibility into granular resource costs, as opposed to public clouds that provide a highly granular breakdown of cost of all cloud resources based on consumption.
+
+There are also many different cost factors to consider, beyond simply the hardware and software infrastructure licenses, when it comes to evaluating the cost of owning and running a private cloud. Lastly, in order to drive financial accountability, IT Ops teams need the ability to chargeback spending to business units with a unified public and private cloud cost report.
+
+So, in this lesson, we will discuss the various cost governance capabilities that Beam provides, including:
+
+* Out-of-the-box visibility into private cloud resource costs
+* Creating automated chargeback rules to allocate spending to the appropriate business unit
+* Providing infrastructure right-sizing and purchase recommendations for public clouds that lead to deep cost savings
 
 
 
