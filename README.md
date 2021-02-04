@@ -1454,6 +1454,16 @@ What are application profiles?
 
 * An application profile provides different combinations of services and profile variables while configuring a blueprint.
 
+## Multiple Application Profiles
+
+Every blueprint has a default profile, it can be thought of a base layer of the blueprint. The default profile was used in the single-VM blueprint, but it was invisible to the user.
+
+If needed, the default profile can be renamed for a better description for operators. You can also create additional application profiles to cater to your requirement.
+
+Additional application profiles provide the operator role (or higher) deployment choices when using an application deployment. This increases blueprint reuse (of actions and governance) instead of making separate blueprints for each permutation of deployment.
+
+Use application profiles to reduce the amount of delegated run-time properties: less choice reduces complexity and increases productivity: less is more!
+
 
 
 
