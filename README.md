@@ -1559,6 +1559,30 @@ ________________________________________________________________________________
 
 ## Lesson Overview
 
+Welcome to the final lesson of the <strong>Public and Hybrid Cloud Management</strong> course, and the conclusion of the last course in the Hybrid Cloud Engineering Nanodegree program. In this lesson, we’re expanding our scope a little to products beyond Calm. We’ve already extended your blueprint into the public cloud, making it truly hybrid — but with the inclusion of the public cloud comes a collection of important considerations.
+
+One of those, if you think back all the way to the beginning of this program, is cost. Because of the way the public cloud works, with the ability to either reserve resources or consume them on-demand, cost management can get quite tricky. There’s also an additional layer involved in managing your private cloud — the other half of your hybrid set up — and there’s a cost and consumption component there as well.
+
+And, practically speaking, the hybrid model is only valuable if you’re able to manage it in a way that allows you to derive the benefits of cloud agility while controlling costs. If you’re running public cloud workloads, private workloads, and hybrid workloads where needed then you’ve achieved a true hybrid cloud model in which your applications are sitting wherever they work best.
+
+A key challenge in public clouds is that the inherent agility and ease of use of public clouds leads to a consumption model in which you do not have control over how cloud resources are consumed. This can lead to inefficient consumption and costs can quickly spiral out of control. To control these costs, it is important to implement governance policies that determine how your cloud infrastructure is consumed and make adjustments for non-optimal consumption. So, quite simply, keeping an eye on and managing your costs is key. And to help you do that, we’re going to wrap this program up by talking about Xi Beam.
+
+Beam is a Nutanix software-as-a-service product that helps customers with cost governance for both their public and private clouds. Beam’s cost optimization capabilities (called the cost optimization module) help identify cost saving opportunities in public clouds, and also enable financial governance across public and private clouds.
+
+Beam’s cost optimization module helps provide visibility into multi-cloud spend across clouds such as AWS, Azure, and Nutanix. It comes with several features that provide an average of 35% or more in public cloud cost savings through elimination of unused resources, right-sizing of underutilized resources and purchase and exchange recommendations for reserved instances.
+
+So, in a fair amount of detail, we’re going to discuss:
+
+* How you can configure cost policies
+* What you need to do to achieve public cloud cost savings
+* How you can implement private cloud cost metering
+* Using the chargeback mechanism to drive financial accountability
+* Various reporting and alert capabilities that are available in Beam out-of-the-box
+
+Thank you for making it this far in the course, and for sticking with us to the very end. Let’s begin.
+
+
+
 
 
 
