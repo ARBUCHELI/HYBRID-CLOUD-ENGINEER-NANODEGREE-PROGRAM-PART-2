@@ -1420,5 +1420,19 @@ For this lesson’s exercise, the load balancer will remain on the private cloud
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=xq3Asp2tnDo&feature=emb_logo)
 
+## Calm Application Profiles: Advanced
+
+We have discussed application profiles in more detail in the On-Premises Private Cloud Automation course.
+
+We had covered what an application profile is and also explained the best practices to follow when using an application profile. Let’s do a quick recap.
+
+Calm enables you to extend your Nutanix infrastructure into the public cloud, like AWS. It provisions, scales, and manages infrastructure and applications across multiple environments to make the entire IT infrastructure more agile and application-centric.
+
+Calm uses a construct called application profiles to enable you to create multiple profiles of different size and infrastructure. You can have one application profile with Nutanix as the underlying infrastructure and another with AWS. You can also have an application profile that is hybrid across multiple providers. This provides an IT operator with choice while deploying an application.
+
+Another use for Application profiles is separate, but related application environments: a development web application deployment may use a development database password, while a staging environment could use a staging database password, and so on for each desired environment. In this manner, maximizing reuse for consistent governance and operations of the different application deployments from the same blueprint.
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
