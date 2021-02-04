@@ -1621,6 +1621,31 @@ So, in this lesson, we will discuss the various cost governance capabilities tha
 * Creating automated chargeback rules to allocate spending to the appropriate business unit
 * Providing infrastructure right-sizing and purchase recommendations for public clouds that lead to deep cost savings
 
+## Unifying Hybrid Cloud Cost Governance
+
+It’s important to be able to compare costs across different cloud environments to optimize deployments. While this sounds simple enough, in practice these comparisons are often difficult.
+
+For example, it’s impossible to know at a glance what on-premises VM configurations are good equivalents for an AWS t3.large or a 1.4xlarge instance. What AWS storage is the equivalent of your on-premises flash?
+
+Without answers to these types of questions, it can be difficult to rightsize the infrastructure needed for workloads moving from one cloud to another, especially when you’re operating hundreds or thousands of VMs in each cloud.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6933dd_unifying-hybrid-cloud-cost-governance/unifying-hybrid-cloud-cost-governance.png)
+
+You need some way to normalize cross-cloud comparisons to ensure you’re not comparing apples to oranges and making inaccurate decisions. It’s the only way to operate a hybrid cloud environment efficiently at scale.
+
+Given these complexities, it’s perhaps surprising that the spreadsheet remains the most common tool for managing cloud costs.
+
+And although the spreadsheet is the most common tool, it’s hardly the most appropriate. A more diligent application is needed for hybrid cloud cost governance. There are a number of tools that provide cloud cost management, yet according to the Flexera 2020 State of the Cloud report, just 33% of enterprises surveyed reported using them.
+
+Your goal for cost governance should be to implement tools that provide cost governance across your private and public clouds deployments. This will provide a single point of management and optimization. The capabilities of the available tools vary widely, and each has its own strengths and limitations.
+
+## Quiz: Unifying Hybrid Cloud Cost Governance
+
+### QUIZ QUESTION
+You are spearheading a project to deploy a number of new workloads, designed to meet the needs of various business-critical applications that your engineering team is working on. There are a variety of workloads involved — databases, applications, communications, and so on. The three options available to you are your private cloud, AWS, and Azure. Where should you deploy your workloads and why?
+
+* It’s too early to say without a sizing and cost comparison. You need to look at each workload and determine the best fit — considering both performance and cost — before making a decision.
+
 
 
 
