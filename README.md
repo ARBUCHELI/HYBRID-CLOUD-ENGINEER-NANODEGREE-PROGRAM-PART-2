@@ -1807,11 +1807,42 @@ To start using Beam, you will need to configure your Nutanix account with Beam b
 * 1. Click the <strong>Entities</strong> menu and go to <strong>Configure > Nutanix Accounts</strong>. Observe the configured license key for the <strong>Beam Lab Nutanix Account.</strong>
 * 2. Logout by clicking the username HCE Beam## and selecting Log out.
 
+## Cost Governance with Xi Beam
 
+Financial governance involves a lot more than simply keeping costs under control. The need to centralize control across multiple teams becomes critical as enterprises foray into multi-cloud and multi-application deployments. Cloud vendors and business owners need a systematic way to map consumption to business units in complex environments.
 
+Cloud Cost Monitoring & Optimization (CCMO) tools with governance capabilities delivered as a part of a Cloud Management Platform (CMP) can help you visualize resources by groups and departments, empowering you to manage their usage and enforce policies based on allocated budgets.
 
+This financial governance capability creates better accountability by identifying the teams, users, or projects that are driving the cloud spending. This approach enables business owners to make data-driven spending decisions that ultimately help you get the maximum value out of your cloud investment.
 
+### What is Xi Beam?
+Xi Beam by Nutanix is a software-as-a-service product that helps customers with cost governance for both their public and private clouds. Beam’s cost optimization capabilities (called the cost optimization module) help identify cost saving opportunities in public clouds, and also enable chargeback and budgeting across public and private clouds.
 
+Cost optimization module helps provide visibility into multi-cloud spend across clouds such as AWS, Azure, and Nutanix. It comes with several features that provide an average of 35% or more in public cloud cost savings through elimination of unused resources, right-sizing of underutilized resources and purchase or exchange recommendations for reserved instances.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6934a8_what-is-nutanix-beam/what-is-nutanix-beam.png)
+
+### Cost Governance
+At the very beginning of this lesson, we spoke briefly about cost governance. Let’s recap those points and talk about the landscape of architectures and associated costs today before we move on.
+
+Organizations today are increasingly adopting a multi-cloud architecture that spans across private and public clouds. This provides the necessary agility and flexibility of choice needed for IT teams to quickly fulfil business needs.
+
+However, with workloads spanning public and private clouds, there is a strong need for a cost governance solution that centralizes visibility across all clouds and implements cost governance policies to keep overall IT spending within budgets.
+
+A key cost governance challenge in private cloud is the lack of immediate visibility into granular resource costs as opposed to public clouds, which provide an on-demand, highly granular breakdown of cost of all cloud resources based on consumption.
+
+There are also many different cost factors to consider, beyond simply the hardware and software infrastructure licenses, when it comes to evaluating the cost of owning and running a private cloud. Lastly, in order to drive financial accountability, financial admins need the ability to chargeback spending to business units with a unified public and private cloud cost report.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6934d4_cost-governance/cost-governance.png)
+
+### Multi-cloud Cost Management with Beam
+With applications and workloads increasingly spanning private and public cloud boundaries, it is critical to ensure that businesses can track and allocate spending across clouds using multi-cloud showback and chargeback reports that span private and multiple public clouds.
+
+In order to drive financial accountability, it is essential to have reporting mechanisms that can automatically identify and update resource costs in real-time for both public and private clouds. Beam provides a tag-based reporting structure that can be used to create highly granular cost reports and allocate spending to an appropriate business unit or cost center. However, not all resources can be or will be tagged.
+
+In order to avoid manually going through lengthy cost reports each billing cycle to identify and allocate untagged spending to a cost center, Beam allows you to set up automated chargeback rules for untagged spending.
+
+Set up the chargeback rule once and all future untagged resource costs will automatically get allocated to a particular cost center, saving dozens of hours of manual work each month. You can also set up budgets and track spending against those budgets so that you are proactively notified before spending goes out of control.
 
 
 
