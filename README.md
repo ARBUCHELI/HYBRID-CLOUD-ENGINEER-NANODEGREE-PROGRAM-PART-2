@@ -1646,6 +1646,16 @@ You are spearheading a project to deploy a number of new workloads, designed to 
 
 * It’s too early to say without a sizing and cost comparison. You need to look at each workload and determine the best fit — considering both performance and cost — before making a decision.
 
+## Why Cost Governance is Critical for a Private Cloud
+
+![](https://video.udacity-data.com/topher/2020/September/5f693408_why-cost-governance-is-critical-in-a-private-cloud-environment/why-cost-governance-is-critical-in-a-private-cloud-environment.png)
+
+Cost governance has become a challenge for private cloud deployments. Cost overruns result from wasted or poorly utilized resources, and a lack of visibility into the true cost of private cloud resources. This, in turn, makes it impossible to accurately compare private cloud costs with public cloud costs for corresponding resources.
+
+Private cloud users are often better at consuming resources than they are at releasing them, either due lack of visibility, mistakes, or neglect. To control usage and avoid wasting resources, you need to be able to monitor and meter the true costs of private cloud resources and be able to easily identify resources that are underused or abandoned.
+
+A private cloud solution needs the ability to monitor, meter, and chargeback costs to end users and departments. Your private cloud should include granular cost metering that accounts for all contributing datacenter costs, enabling you to better predict future needs, plan for growth, and track costs and budgets.
+
 
 
 
