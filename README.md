@@ -1656,7 +1656,34 @@ Private cloud users are often better at consuming resources than they are at rel
 
 A private cloud solution needs the ability to monitor, meter, and chargeback costs to end users and departments. Your private cloud should include granular cost metering that accounts for all contributing datacenter costs, enabling you to better predict future needs, plan for growth, and track costs and budgets.
 
+## Understanding Cost Management in a Hybrid Cloud Environment
 
+Things only get more complicated when you have workloads across multiple clouds — whether private, public, or hybrid. Jumping into the cloud affects your IT economic model, but jumping into more than one cloud makes the “cloud cost” question much more difficult to answer.
+
+Financial comparisons between traditional data centers and cloud infrastructure are not simple to make. It is more than just comparing the compute, storage, and network costs between them. Many hidden overheads come into play and can become the deciding factor. There are several factors that you need to consider when determining ways to reduce costs.
+
+![](https://video.udacity-data.com/topher/2020/September/5f693430_understanding-cost-management-in-a-multi-cloud-environment/understanding-cost-management-in-a-multi-cloud-environment.png)
+
+### Vendor Discounts
+Most cloud providers offer significant discounts when you pay the charges for computing resources upfront. For example, Amazon Web Services (AWS) provides “reserved instances,” which are typically compute and database services that are available at significant discounts if you commit to them for a duration of one year or longer. In this scenario, while you save on costs, you do lose the flexibility of being able to pay-as-you-go.
+
+These reserved instances are usually available at discounts of 50–70 percent over on-demand pricing and are best used for production workloads or when you know that you will need that instance for an extended period.
+
+Cloud vendors also offer their spare compute, storage, and network resources at a significantly discounted price-scheme called spot instances. For example, AWS sometimes offers its unused compute resources at discounts as high as 60–80 percent compared with on-demand pricing. These spot instances are perfect for dev/test workloads where you do not necessarily care about high availability and can work with whatever compute instance the cloud provider gives you.
+
+In addition to reserved instances, AWS has announced the launch of Savings Plans which are expected to replace reserved instances in the long term. With AWS Savings Plans, you pay a discounted rate for a certain amount of compute capacity which can be consumed against any number and type of compute instances unlike reserved instances where you purchase reservation based pricing for a specific number and type of instances.
+
+### Continuous Monitoring
+Like the name suggests, optimal cloud management requires continuously monitoring resource utilization such as CPU, memory, disk usage, and so on. The purpose of continuous monitoring is two-fold. First, it ensures awareness of the cloud environment itself. And second, it ensures that cost anomalies at a user, service, or account level are detected and reported for remediation.
+
+### Continuous Optimization
+In order to avoid waste, cloud administrators should implement policies to resize resources that are too bulky for what they are being used for. For example, if you have a compute instance that is continuously using less than 2 percent CPU, you may be able to downsize it and save on costs without compromising performance.
+
+### Leveraging Auto-scaling Tools
+Most cloud providers offer auto-scaling tools that help you define usage limits and policies for various resources. These tools can automatically enforce your usage policy so that costs always remain within predefined limits.
+
+### Automated Scheduling Policies
+One of the biggest drivers of public cloud costs are zombie resources left running in the cloud that you may not be using anymore. For example, you may have compute and storage instances up and running 24/7 in your dev/test environment, but you may not need them overnight or on weekends. Why not use an automated scheduling policy that shuts them down when they are not needed and brings them up when you are ready to use them again? Turning off resources overnight and on the weekends can significantly add to your cloud cost reduction.
 
 
 
