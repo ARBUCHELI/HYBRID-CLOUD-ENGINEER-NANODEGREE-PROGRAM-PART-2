@@ -1522,6 +1522,32 @@ Select the 3 best practices that have to be followed when using application prof
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=mop4e6HmLi4&feature=emb_logo)
 
+## Glossary
+
+### Application Profiles - 
+An application profile provides different combinations of the service, package, and VM while configuring a blueprint.
+
+### Blueprint - 
+A blueprint is the framework for every application that you model by using Nutanix Calm. Blueprints are templates that describe all the steps that are required to provision, configure, and execute tasks on the services and applications that are created.
+
+### Calm - 
+It provisions, scales, and manages infrastructure and applications across multiple environments to make the entire IT infrastructure more agile and application-centric.
+
+### Services - 
+Services are the virtual machine instances, existing machines or bare-metal machines, that you can provision and configure by using Nutanix Calm.
+
+## Lesson Conclusion
+
+And now we come to the end of this lesson. Before you move on to the next, let’s take a moment to recap everything that we talked about.
+
+We used your knowledge of both the public and the private cloud to discuss hybrid cloud scalability.
+
+Specifically, we spoke about:
+
+* How you add an AWS provider to Calm.
+* Global load balancing - what it is, why it matters, the considerations involved, and what global load balancing looks like for different infrastructure providers.
+* The considerations involved when you need to think about how your audience will access your application - such as the nature of the application, VPNs, geographical considerations, network performance, and network and data locality.
+* Concepts related to application profiles, all of which you need to keep in mind when designing multiple deployment scenarios with consistent governance and operations.
 
 
 
