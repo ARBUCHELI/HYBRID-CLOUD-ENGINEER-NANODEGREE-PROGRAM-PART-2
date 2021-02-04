@@ -1432,6 +1432,21 @@ Calm uses a construct called application profiles to enable you to create multip
 
 Another use for Application profiles is separate, but related application environments: a development web application deployment may use a development database password, while a staging environment could use a staging database password, and so on for each desired environment. In this manner, maximizing reuse for consistent governance and operations of the different application deployments from the same blueprint.
 
+## Quiz: Calm Application Profiles
+
+### QUIZ QUESTION
+Which Calm construct enables you to create multiple profiles of different size and infrastructure.
+
+* Application Profiles
+
+
+
+
+
+
+
+
+
 
 
 
