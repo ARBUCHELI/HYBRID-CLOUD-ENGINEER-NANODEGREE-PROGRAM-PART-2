@@ -1685,7 +1685,19 @@ Most cloud providers offer auto-scaling tools that help you define usage limits 
 ### Automated Scheduling Policies
 One of the biggest drivers of public cloud costs are zombie resources left running in the cloud that you may not be using anymore. For example, you may have compute and storage instances up and running 24/7 in your dev/test environment, but you may not need them overnight or on weekends. Why not use an automated scheduling policy that shuts them down when they are not needed and brings them up when you are ready to use them again? Turning off resources overnight and on the weekends can significantly add to your cloud cost reduction.
 
+## Quiz: Hybrid Cloud Cost Management
 
+You have been onboarded as a consultant to help a company reduce their cloud costs. After careful study of their public cloud and private cloud deployments, the IT team has worked out two ideas:
+
+* a) Purchase reserved instances for their public cloud instead of using resources on-demand.
+* b) Evaluate their on-prem workloads to determine if resources have been allocated effectively. If possible, scale resources down without impacting performance.
+
+Which of these two suggestions should they move forward with?
+
+### QUIZ QUESTION
+Read the scenario above and determine which of the two options the IT team should move forward with.
+
+* They should proceed with both options. Both approaches offer a viable path to cost reduction and optimization.
 
 
 
