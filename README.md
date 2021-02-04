@@ -1853,6 +1853,8 @@ What is Xi Beam?
 
 ## Configuring a Cost Governance Policy in Xi Beam
 
+Please watch the videos to follow the tutorials:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=9mZIq0fPYWU&feature=emb_logo)
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=CVnyeSycap4&feature=emb_logo)
