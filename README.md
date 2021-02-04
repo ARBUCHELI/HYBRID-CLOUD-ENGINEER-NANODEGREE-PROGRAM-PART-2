@@ -1844,6 +1844,13 @@ In order to avoid manually going through lengthy cost reports each billing cycle
 
 Set up the chargeback rule once and all future untagged resource costs will automatically get allocated to a particular cost center, saving dozens of hours of manual work each month. You can also set up budgets and track spending against those budgets so that you are proactively notified before spending goes out of control.
 
+## Quiz: Cost Governance with Beam
+
+### QUIZ QUESTION
+What is Xi Beam?
+
+* A software-as-a-service product that helps customers with cost governance for both their public and private clouds.
+
 
 
 
