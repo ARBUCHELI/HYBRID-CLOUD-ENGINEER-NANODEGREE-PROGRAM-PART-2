@@ -1931,6 +1931,13 @@ Lists all the accounts along with other details, for example, the attached polic
 
 ![](https://video.udacity-data.com/topher/2020/September/5f69358b_beam-accounts-view/beam-accounts-view.png)
 
+## Quiz: Configuring Cost Policies
+
+### QUIZ QUESTION
+What is the difference between an audit and a cost policy?
+
+* An audit is a set of rules to filter resources based on the usage parameters used to determine if a specific resource is unused or underutilized. A collection of these audits form a cost policy.
+
 
 
 
