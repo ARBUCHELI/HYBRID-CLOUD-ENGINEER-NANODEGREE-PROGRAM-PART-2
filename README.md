@@ -1939,8 +1939,17 @@ What is the difference between an audit and a cost policy?
 * An audit is a set of rules to filter resources based on the usage parameters used to determine if a specific resource is unused or underutilized. A collection of these audits form a cost policy.
 
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=cZt4I-FSL0A&feature=emb_logo)
 
+A scope is a logical group of your cloud resources that provides you with a custom view of your cloud resources. You can define scopes using cloud, accounts, and tags. An administrator can assign read-only access to a user. This will give that user read-only access for the resources within the scope and nothing else.
 
+To create a scope:
+
+* 1. In the Beam console, select <strong>Beam Cost Governance</strong> from the application selection menu.
+* 2. Click the menu icon in the top-left corner to display the main menu. Then, click <strong>Configure > Scopes.</strong>
+* 3. Click <strong>Create a Scope</strong> to open the <strong>Scope Creation</srong> page.
+* 4. On the scope creation page, name the scope; select viewers; and define the cloud, account, and tags.
+* 5. Save your scope to complete the creation process.
 
 
 
