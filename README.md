@@ -2224,6 +2224,15 @@ Beam makes these recommendations by analyzing all the instances (comput4 or data
 
 ![](https://video.udacity-data.com/topher/2020/September/5f6944ac_purchase-breakeven-analysis/purchase-breakeven-analysis.png)
 
+## Quiz: Reserved Instance Purchases
+
+### QUIZ QUESTION
+What information does Beam present about reserved instances in the Top Recommendations section?
+
+* Suggestions for which reserved instances to purchase based on historical analysis of your usage
+
+
+
 
 
 
