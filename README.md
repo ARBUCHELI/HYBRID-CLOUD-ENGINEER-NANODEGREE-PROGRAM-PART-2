@@ -1962,7 +1962,25 @@ What is a scope?
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=T4639nnQIho&feature=emb_logo)
 
+Beam provides a detailed view of the existing spend on Nutanix resources based on the purchased Nutanix products and the clusters that those products are associated with. Cost configuration for Nutanix is the key to visualize the true cost of running a Nutanix cloud.
 
+You can configure the cost for Nutanix Products Clusters, and VMs.
+
+To go to the Cost Configuration page, click the hamburger icon in the top-left corner to display the main menu. Then, click <strongConfigure > Nutanix Cost Configuration.</strong>
+
+On the Nutanix Cost Configuration page, you will have access to three tabs:
+
+### Product Portfolio
+
+The Product Portfolio tab is a comprehensive summary of all the Nutanix products purchased to date, their capacity, and assumed market prices.
+
+### Cluster
+
+The Cluster tab provides a list of all the Nutanix clusters and monthly costs for each cluster. Total Cost of Ownership (TCO) model is the cost allocation basis for the clusters. You can edit the TCO details for each cluster.
+
+### VM
+
+The VM tab provides a list of clusters along with the VM Costing model selected for each cluster. The VM costing model allocates the amortized cost of the cluster proportionally to the VMs that are running in the cluster based on a ratio of the allocated capacity to a VM in proportion to the total capacity on the cluster that the VM is running in. The proportional allocation can be based on the actual virtual capacity or target virtual capacity which accounts for overprovisioning of virtual capacity for VMs in comparison with the available physical capacity. You can configure the allocation type at a cluster level.
 
 
 
