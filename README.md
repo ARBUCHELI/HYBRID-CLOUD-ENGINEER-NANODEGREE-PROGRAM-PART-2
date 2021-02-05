@@ -2116,13 +2116,27 @@ Optimization Opportunities, on the other hand, consists of three distinct sectio
 
 To eliminate unused resources, in the Optimization Opportunities section, click the <strong>Eliminate</strong>link. You will be navigated to this page, which provides more details about unused resources you can remove, the potential cost savings from each, as well as the total savings that you will incur.
 
+![](https://video.udacity-data.com/topher/2020/September/5f694179_save-eliminate-unused-resources/save-eliminate-unused-resources.png)
 
+As you can see here, there are a number of old snapshots, as well as unused IPs, ELBs, volumes, hosted zones, and so on. To take action here, first we need to click <strong>View List.</strong> That will take us to a page with even more details about the unused resource in question.
 
+![](https://video.udacity-data.com/topher/2020/September/5f694198_save-snapshot-details/save-snapshot-details.png)
 
+Taking the unused snapshots as an example, on the details page, we have several options that we can use. We can:
 
+* Suppress some or all of the snapshots because you may not want to eliminate them
+* Eliminate some or all of the snapshots so that you can benefit from cost savings
+* Raise a ServiceNow ticket for IT assistance with finding the appropriate person to act on the cost saving recommendation
 
+Suppressing some or all of the snapshots simply means that Beam will no longer include them in future audits. To suppress a snapshot, select it from the list and then click <strong>Actions > Suppress Selected.</strong> You will be presented with a confirmation dialog box, in which you will need to provide a reason for your choice and then click Suppress.
 
+![](https://video.udacity-data.com/topher/2020/September/5f6941b4_save-suppress/save-suppress.png)
 
+To eliminate a snapshot, select it and click <strong>Actions > Eliminate Selected.</strong> Once again, you will be prompted for confirmation. Simply select the checkbox and then click <strong>Yes, Eliminate.</strong>
+
+![](https://video.udacity-data.com/topher/2020/September/5f6941d1_save-eliminate/save-eliminate.png)
+
+On the other hand, if you believe Beam’s cost audit needs to be changed to meet your organization’s requirements, you can edit the cost policy that governs this. Click the <strong>Edit Cost Policy</strong> link to view the cost policy responsible for flagging unused snapshots and modify it as needed.
 
 
 
