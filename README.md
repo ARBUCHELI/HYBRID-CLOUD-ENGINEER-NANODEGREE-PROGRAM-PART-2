@@ -1989,6 +1989,82 @@ What are the components involved in visualizing the cost of running a Nutanix pr
 
 * VMs, Clusters, and all Nutanix Products
 
+## AWS Cost Configuration
+
+Beam provides you with multiple options when performing AWS cost configuration to let you choose how you want to present the cloud spend in Beam.
+
+The options provided are:
+
+* Cost Logic: Choose between Amortized Cost or Absolute Cost.
+* Billing: Choose between blended cost and unblended cost.
+* Credits and Refunds: Choose to include or exclude the credits and refunds in the cost report.
+* AWS EDP: Choose to include or exclude the Enterprise Discount Program (EDP) discount in the cost report.
+
+All cost information that Beam presents is based on the options that you select.
+
+### Cost Logic
+Cost Logic determines how AWS RI, Savings Plan, EDP, Credits, Refunds, and Taxes are reported in Beam.
+
+### Amortized Cost Logic
+Cost reporting is based on accrual-based accounting. For Reserved Instances (RI) and savings plan, the cost reporting is based on the effective cost column in the AWS CUR. For EDP, Credits and Refunds, and Taxes, Xi Beam does the amortization calculation.
+
+In the case of taxes, AWS reports the amortized cost of the tax at the account level. Xi Beam does the amortization calculation at the service, region, resource level, and so on.
+
+Amortized Cost logic is useful when you want to view the cost of resources on an accrual basis considering the usage of RI, Savings Plan, Discounts, and Taxes specific to that resource.
+
+### Absolute Cost Logic
+Cost reporting is based on cash-based accounting. The RIs, savings plan, EDP, Credit and Refunds, and Taxes are not amortized over the billing period.
+
+If you select the Absolute Cost option as the cost logic, the cost of RI, Savings Plan, EDP, Credits and Refunds is shown as a separate line item, and cloud resource cost is reported without the apportioned cost of RI, Savings Plan, and so on. This results in a spike on the day monthly RI fee or upfront RI fee gets charged.
+
+### Billing
+You can select between blended cost and unblended cost.
+
+### Unblended Cost
+If you select the Unblended Cost option, Beam reports the cost of resources based on usage. Selecting this option reports the cost of resources from the Unblended Cost column in the AWS CUR.
+
+### Blended Cost
+If you select the Blended Cost option, Beam reports the cost of resources based on the average cost of usage across the consolidated billing family. Selecting this option reports the cost of resources from the Blended Cost column of the AWS CUR.
+
+### Credits and Refunds
+Beam provides you with the option to include or exclude credits and refunds in the cost report irrespective of the Amortized Cost or Absolute Cost selection.
+
+If you select the Include option, Credits and Refunds are shown in the cost report as a separate line item or amortized and apportioned to a resource depending on the selection between the absolute cost or amortized cost, respectively.
+
+If you select the Exclude option, Credits and Refunds are not shown in the cost report to the user (for example, Scope or Cost Center viewers). It also gets excluded from the Analyze page.
+
+### AWS Enterprise Discount Program (EDP)
+AWS provides enterprises with a discount on its services against a volume spend commitment. For example, an enterprise commits to spending $2 million on AWS services and receives a certain percentage of the discount. The enterprise must pay $2 million even if they do not spend the amount.
+
+Beam provides you with the option to include or exclude the EDP discount in the cost report. EDP discount is applicable to both amortized and absolute cost logic.
+
+If you select the Include option, EDP discount is shown in the cost report as a separate line item or amortized and apportioned to a resource depending on the selection between the absolute cost or amortized cost, respectively. If you select the Exclude option, EDP discount is not shown in the cost report to the user (for example, Scope or Cost Center viewers). It also gets excluded from the Cost Analyze view.
+
+You can add EDP contract details in Beam. Adding the EDP contract details allows you to view the projected spend after the EDP discount is accounted for in the Cost Analyze view. Any discount from EDP applied to the current usage gets reported in CUR and Beam reports accordingly.
+
+For future projections, you need to add contract details which Beam will use accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
