@@ -1891,6 +1891,27 @@ Much like adding a Nutanix account, adding an AWS account is also simple — but
 * 4. Back in Beam, enter the CUR details and execute a CloudFormation template in the Payer account to assign a role to Xi Beam. Enter the report name, report prefix (if any), and S3 bucket name. Generate and execute the CFT provided by Beam in your AWS Payer account.
 * 5. Finally, configure AWS linked accounts in Beam. Once you configure your AWS payer account, Beam will detect all associated linked accounts. It is recommended to generate and execute the CFT for each linked account to better optimize your cloud spend.
 
+## Quiz: Configuring Cost Governance Policy
+
+### QUESTION 1 OF 2
+Which cloud accounts does Beam support? Select all that apply.
+
+* Nutanix
+
+* AWS
+
+* Azure
+
+### QUESTION 2 OF 2
+What steps do you need to follow to add a Nutanix cloud account in Beam?
+
+* 1. From the main menu, navigate to the configure Nutanix account page.
+* 2. Enter your License Key or Serial Asset Number and click Next.
+* 3. Beam will fetch the account name automatically.
+
+
+
+
 
 
 
