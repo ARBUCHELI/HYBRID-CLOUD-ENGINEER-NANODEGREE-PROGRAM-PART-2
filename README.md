@@ -2066,8 +2066,11 @@ In this section, we will discuss how to identify potential cost savings for AWS 
 * Purchasing reserved instances
 >> * And finally, we’ll also discuss how you can leverage Beam’s purchase recommendations for reserved instances to incur even greater cost savings.
 
+## Viewing Cloud Cost Details
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=izu8jnCDYpQ&feature=emb_logo)
+
+
 
 
 
