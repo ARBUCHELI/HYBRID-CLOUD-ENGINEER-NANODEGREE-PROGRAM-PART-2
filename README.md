@@ -2145,9 +2145,31 @@ What is the difference between suppressing an unused resource and eliminating it
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/534.jpg)
 
+## Rightsizing Underutilized Resources
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=KQgeoL5uv5I&feature=emb_logo)
 
+Another option available to you for cost savings is rightsizing underutilized resources. There are two ways you can access the Optimization section. From the row of options at the top of the screen, select <strong>Optimize.</strong>
 
+![](https://video.udacity-data.com/topher/2020/September/5f6943ed_save-access-rightsize-2/save-access-rightsize-2.png)
+
+Alternatively, on the Save Overview page, from the Optimization Opportunities widget at the bottom of the page, in the Cloud Rightsizing section, click <strong>Optimize.</strong>
+
+![](https://video.udacity-data.com/topher/2020/September/5f694405_save-access-rightsize-1/save-access-rightsize-1.png)
+
+As with the ability to eliminate unused resources, choosing to optimize will take you to a page with a list of all potential resources for optimization. These include EBS volumes, EC2 instances, RDS PIOPS, EBS PIOPS, and more.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69441a_save-optimize-cloud-resources/save-optimize-cloud-resources.png)
+
+As an example, let’s take a closer look at rightsizing underutilized EC2 instances. As before, click View List to see more details about the EC2 instances and actions you can take. In this case, you will see a list of instances with low CPU and memory utilization. For each line item that is displayed, you can click the arrow at the far right to view additional details about the instance itself, as well as a chart showing utilization data over time.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694431_save-optimize-line-item-details/save-optimize-line-item-details.png)
+
+As you can see, in addition to providing details, Beam also provides a sizing recommendation. In the image above, the instance is a t2.micro and, based on utilization, Beam has concluded that it would be better as a t2.nano instance. This will reduce the cost from $9.94 to $4.97 which is nearly a 50% reduction in spending on this EC2 instance. Once you have this information, you can then plan your optimization effort.
+
+While Beam cannot automatically optimize the instance size for you, it does provide step-by-step instructions so that you can do so yourself. Click the <strong>How to optimize?</strong> link to view a popup with details. If you want to optimize the other instances as well, use the arrows at the top left of the popup to view details and optimization instructions for each instance.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69444b_save-optimize-popup/save-optimize-popup.png)
 
 
 
