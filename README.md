@@ -1859,6 +1859,53 @@ Please watch the videos to follow the tutorials:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=CVnyeSycap4&feature=emb_logo)
 
+### Configuring Cloud Accounts
+You can add and manage your AWS, Azure, and Nutanix accounts for cost governance using the Beam console. To configure cloud accounts, click the menu icon in the top-left corner to display the main menu. Then, click Configure and select the cloud of your choice. Beam supports three clouds at this time: Nutanix, AWS, and Azure.
+
+### Configuring a Nutanix account for Private Cloud cost governance
+You can configure your Nutanix account in Beam for cost governance. This provides private cloud metering based on a configurable TCO model, multi-cloud chargeback, and budgeting capabilities.
+
+Beam also provides visibility into your Nutanix spend allocated granularly to Nutanix clusters and VMs, allows you to create multi-cloud cost centers and charge spending back to a budget owner.
+
+Adding a Nutanix account is a very simple, two-step process. After logging into the Beam console, click the menu icon at the top left and select <strong>Configure > Nutanix Accounts.</strong>
+
+![](https://video.udacity-data.com/topher/2020/September/5f693502_beam-configure-nutanix-account-1/beam-configure-nutanix-account-1.png)
+
+Click Add Nutanix Account and, on the page that appears, enter your License Key or Serial Asset Number and click Next. Once the License Key or Serial Asset Number have been validated, Beam will fetch the account details and the cost associated with your Nutanix purchases automatically.
+
+### Configuring an AWS account for Public Cloud Cost Governance
+You can configure your AWS accounts in Beam for cost governance. This helps:
+
+* Eliminate unused resources
+* Rightsize underutilized resources
+* Make intelligent reserved instance purchases or exchanges
+* Facilitate multi-cloud chargeback and budgeting
+
+Beam's cost governance capabilities allow you to control your public cloud costs and drive financial accountability.
+
+Much like adding a Nutanix account, adding an AWS account is also simple — but involves five steps.
+
+* 1. As before, after logging into the Beam console, click the menu at the top left and select <strong>Configure > AWS Accounts.</strong>
+* 2. After clicking AWS Accounts, click <strong>Add Payer Account.</strong>
+* 3. From your AWS Billing and Management console, make note of the required details for your existing AWS Cost and Usage Report (CUR). Set up billing in the AWS payer account to receive the CUR in an S3 Bucket.
+* 4. Back in Beam, enter the CUR details and execute a CloudFormation template in the Payer account to assign a role to Xi Beam. Enter the report name, report prefix (if any), and S3 bucket name. Generate and execute the CFT provided by Beam in your AWS Payer account.
+* 5. Finally, configure AWS linked accounts in Beam. Once you configure your AWS payer account, Beam will detect all associated linked accounts. It is recommended to generate and execute the CFT for each linked account to better optimize your cloud spend.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
