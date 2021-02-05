@@ -2114,7 +2114,7 @@ The Projected Savings section:
 
 Optimization Opportunities, on the other hand, consists of three distinct sections – unused cloud resources which you can eliminate to incur savings; rightsizing actions that you can take to optimize spending on instances; and a history of your savings.
 
-To eliminate unused resources, in the Optimization Opportunities section, click the <strong>Eliminate</strong>link. You will be navigated to this page, which provides more details about unused resources you can remove, the potential cost savings from each, as well as the total savings that you will incur.
+To eliminate unused resources, in the Optimization Opportunities section, click the <strong>Eliminate</strong> link. You will be navigated to this page, which provides more details about unused resources you can remove, the potential cost savings from each, as well as the total savings that you will incur.
 
 ![](https://video.udacity-data.com/topher/2020/September/5f694179_save-eliminate-unused-resources/save-eliminate-unused-resources.png)
 
