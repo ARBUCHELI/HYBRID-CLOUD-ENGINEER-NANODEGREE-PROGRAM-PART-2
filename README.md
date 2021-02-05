@@ -1909,12 +1909,27 @@ What steps do you need to follow to add a Nutanix cloud account in Beam?
 * 2. Enter your License Key or Serial Asset Number and click Next.
 * 3. Beam will fetch the account name automatically.
 
+## Configuring Audits and Cost Policies
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?time_continue=76&v=_EBFWpaVdgw&feature=emb_logo)
 
+An audit is a set of rules used to determine if a specific resource is unused or underutilized. Beam allows you to configure the usage parameters of an audit. A collection of these audits form a cost policy.
 
+Beam allows you to define a specific policy for each cloud account. Beam, by default, provides you with a system policy for each cloud. You can clone the system policy to create custom policies. You can create multiple custom policies with different configurations and assign them to different cloud accounts.
 
+To create or view a cost policy, click the menu icon at the top left of the screen and select <strong>Configure > Cost Policy</strong>. Then, in the top-right corner of the Cost Policy page, you will see two types of views available to select.
 
+### Policy View
 
+Lists all the policies along with other details, for example, accounts assigned, cloud type, count of accounts assigned, and so on. To create a custom policy, clone the system policy or an existing custom policy, edit the available fields according to your requirement, and assign single or multiple accounts to that policy. In this view, you can view, clone, edit, and delete a policy.
+
+![](https://video.udacity-data.com/topher/2020/September/5f693555_beam-policy-view/beam-policy-view.png)
+
+### Accounts View
+
+Lists all the accounts along with other details, for example, the attached policy name, cloud type, and so on. In this view, you can click the Reassign button to assign a cost policy to a particular account. You can also select multiple accounts and click the Bulk Reassign button to assign a cost policy to those selected specific cloud accounts.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69358b_beam-accounts-view/beam-accounts-view.png)
 
 
 
