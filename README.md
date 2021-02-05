@@ -1982,6 +1982,13 @@ The Cluster tab provides a list of all the Nutanix clusters and monthly costs fo
 
 The VM tab provides a list of clusters along with the VM Costing model selected for each cluster. The VM costing model allocates the amortized cost of the cluster proportionally to the VMs that are running in the cluster based on a ratio of the allocated capacity to a VM in proportion to the total capacity on the cluster that the VM is running in. The proportional allocation can be based on the actual virtual capacity or target virtual capacity which accounts for overprovisioning of virtual capacity for VMs in comparison with the available physical capacity. You can configure the allocation type at a cluster level.
 
+## Quiz: Nutanix Cost Configuration
+
+### QUIZ QUESTION
+What are the components involved in visualizing the cost of running a Nutanix private cloud?
+
+* VMs, Clusters, and all Nutanix Products
+
 
 
 
