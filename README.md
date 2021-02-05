@@ -2143,7 +2143,7 @@ What is the difference between suppressing an unused resource and eliminating it
 
 * Suppress prevents a resource from being audited in the future; eliminate deletes the resource
 
-
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/534.jpg)
 
 
 
