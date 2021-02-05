@@ -2171,6 +2171,13 @@ While Beam cannot automatically optimize the instance size for you, it does prov
 
 ![](https://video.udacity-data.com/topher/2020/September/5f69444b_save-optimize-popup/save-optimize-popup.png)
 
+## Quiz: Rightsizing Underutilized Resources
+
+### QUIZ QUESTION
+During a routine audit of your clouds on Beam, you have discovered a number of EC2 instances running important applications that could do with optimization. According to Beam’s analysis, the EC2 instances have been assigned more resources than they actually need, so there’s an opportunity for cost savings here. What should you do about this?
+
+* Rightsize the EC2 instances so that you are paying for only the required amount of resources
+
 
 
 
