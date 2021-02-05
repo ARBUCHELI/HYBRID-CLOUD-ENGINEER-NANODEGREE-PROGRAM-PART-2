@@ -2099,9 +2099,22 @@ You have an Azure account that’s linked to Beam and want to view details about
 
 * Menu > Analyze > Projected Spend
 
+## Eliminating Unused Resources
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=pamNfGXXSZ0&feature=emb_logo)
 
+To eliminate unused resources, click the menu icon at the top left of the screen and select Save. By default, you will be taken to the Save Dashboard, which displays two broad categories of information: Projected Savings and Optimization Opportunities.
 
+![](https://video.udacity-data.com/topher/2020/September/5f69415f_save-overview/save-overview.png)
+
+The Projected Savings section:
+
+* Indicates whether or not there is room in your current cloud spend for optimization based on Beam’s analysis
+* Provides an overview of your spend efficiency, potential savings, quarterly costs, and the money and time you’ve saved till date by acting upon Beam’s savings recommendations
+
+Optimization Opportunities, on the other hand, consists of three distinct sections – unused cloud resources which you can eliminate to incur savings; rightsizing actions that you can take to optimize spending on instances; and a history of your savings.
+
+To eliminate unused resources, in the Optimization Opportunities section, click the <strong>Eliminate</strong>link. You will be navigated to this page, which provides more details about unused resources you can remove, the potential cost savings from each, as well as the total savings that you will incur.
 
 
 
