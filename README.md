@@ -2178,8 +2178,51 @@ During a routine audit of your clouds on Beam, you have discovered a number of E
 
 * Rightsize the EC2 instances so that you are paying for only the required amount of resources
 
+## Reserved Instance Purchases and Exchanges
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=zpegBiiX1rk&feature=emb_logo)
 
+The third way in which Beam provides cost savings is by making purchase or exchange recommendations for reserved instances. And before we move forward with what this looks like in Beam, let’s take a moment to understand the idea behind the feature.
+
+Reserved Instance recommendations are made for compute or database instances of a particular instance family. AWS and Azure have many instance families to give customers the ability to choose what works for them.
+
+So, AWS has m5d as an instance family type, with sizes such as m5d.small, m5d.medium, m5d.large, and so on. Another instance family type is z1d with instance sizes such as z1d.small, z1d.medium, z1d.large, and so on.
+
+The first part of what Beam does in this context - that is, for reserved instance purchases - is recommending which instance type you should buy based on a historical analysis of your usage.
+
+So, to take this example forward, let’s say you decide to purchase a reserved instance based on Beam’s recommendation. When you purchase reserved instances from AWS you have to specify the instance type. In this case, let’s say you purchased the m5d.
+
+It’s important to note here that the reservation you purchase will only apply to that particular instance family unless you have specifically asked for a convertible type of reserved instances, which are more expensive than non-convertible.
+
+Convertible instances can switch between EC2 instance family types. So, although you’ve purchased an m5d instance, perhaps your needs change over time. Perhaps you are no longer running m5d instances 24x7 and your reservation-based pricing is no longer being used. And instead of m5d, you are constantly running z1d type instances. If your reservation was of a convertible type then you will be able to switch it from RI for m5d to RI for z1d.
+
+This is the second half of this feature - reserved instance recommendations. Beam performs this analysis automatically for you and will tell you when you have convertible instances that are no longer being optimally used for a particular family type but could be converted to a different family type.
+
+### The Purchase Dashboard
+Now, let’s look at the feature itself. Unlike the two cost saving features we discussed in the previous sections, this particular feature is accessed from the Purchase section of Beam. To get there, click the menu icon at the top left of the screen and select Purchase. You will see the Purchase dashboard.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694474_purchase-overview/purchase-overview.png)
+
+Here, you will see four sets of information:
+
+* Reserved Instance (RI) coverage
+* RI status
+* RI calculator
+* Top recommendations
+
+The Top Recommendations section is what we’re currently interested in. Beam provides the recommendations listed here using a historical analysis of your usage. You can define the lookback period yourself in order to ensure that Beam’s recommendations are tailored to your specific needs. The default lookback period is 14 days by default but can be extended to 30 days. For more details, either click View All Recommendations at the bottom of the screen, or click Buy from the row of options at the top.
+
+Beam makes these recommendations by analyzing all the instances (compute or database) that are running 24x7 over the lookback period. A list of such instances is provided towards the bottom of the page. For compute instances, these could be of many different sizes (small, medium, large, etc.).
+
+![](https://video.udacity-data.com/topher/2020/September/5f694492_purchase-buy-ri/purchase-buy-ri.png)
+
+The purchase recommendations table provides a list of reserved instances (compute or database) that would be ideal to purchase based on existing consumption patterns; the size, platform, location, type, and quantity of those instances; as well as a comparison of the on-demand and reserved cost, and the savings you will incur as a result. Clicking the arrow at the far right of any of the line items in the table will take you to a page with more details about the recommendation.
+
+Several key details are available on this page, to help you make an informed decision about whether or not to invest in an RI. For example, there are high upfront costs associated with an RI purchase but in the long run purchasing an RI leads to significant cost savings for the compute or database instances that will be heavily used. Beam performs a breakeven analysis to ease the decision-making process making it simple for you to decide - am I going to run this particular instance 24x7 for a certain number of months? If so, I should switch to a reservation based plan instead of paying on-demand pricing.
+
+Beam makes these recommendations by analyzing all the instances (comput4 or database) that are running 24x7 over the lookback period. A list of such instances is provided towards the bottom of the page. For compute instances, these could be of many different sizes (small, medium, large, etc.).
+
+![](https://video.udacity-data.com/topher/2020/September/5f6944ac_purchase-breakeven-analysis/purchase-breakeven-analysis.png)
 
 
 
