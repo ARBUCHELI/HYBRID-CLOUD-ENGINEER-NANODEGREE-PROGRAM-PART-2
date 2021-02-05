@@ -1951,6 +1951,15 @@ To create a scope:
 * 4. On the scope creation page, name the scope; select viewers; and define the cloud, account, and tags.
 * 5. Save your scope to complete the creation process.
 
+## Quiz: Creating a Scope
+
+### QUIZ QUESTION
+What is a scope?
+
+* A scope is a logical group of your cloud resources that provides you with a custom view of your cloud resources.
+
+
+
 
 
 
