@@ -2044,6 +2044,10 @@ You can add EDP contract details in Beam. Adding the EDP contract details allows
 
 For future projections, you need to add contract details which Beam will use accordingly.
 
+## Quiz: AWS Cost Configuration
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/533.jpg)
+
 
 
 
