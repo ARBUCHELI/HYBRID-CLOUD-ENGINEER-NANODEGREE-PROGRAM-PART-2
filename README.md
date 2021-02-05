@@ -2070,7 +2070,27 @@ In this section, we will discuss how to identify potential cost savings for AWS 
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=izu8jnCDYpQ&feature=emb_logo)
 
+The first thing you need to do is select your AWS Account. In the sample selection here, as you can see, the AWS account has multiple payer accounts associated with it.
 
+![](https://video.udacity-data.com/topher/2020/September/5f69381b_aws-account-selection-blurred/aws-account-selection-blurred.png)
+
+After you select an account, the dashboard will update to display information specific to your AWS account. You will typically see five widgets:
+
+* Spend Overview
+* Spend Analysis
+* Spend Efficiency
+* Spend Anomalies
+* Reserved Instances
+
+![](https://video.udacity-data.com/topher/2020/September/5f693839_aws-summary-dashboard-combined/aws-summary-dashboard-combined.png)
+
+This is your overall cost view for a given account. When you want a summary of everything that’s going on with a cloud account, and to quickly check important statistics or identify anomalies, this is the page you will come to.
+
+Then, to see more granular information about current and projected spend, click the menu icon at the top left and click Analyze. On the Analyze screen, you will see an overview of your current spend by default, with options to view current spend by account, service, region, API operation, purchase option, and tags. The Tags option also provides a filter that allows you to select specific tags and filter the data accordingly.
+
+![](https://video.udacity-data.com/topher/2020/September/5f693859_analyze-current-spend-2/analyze-current-spend-2.png)
+
+You can also view projected spend using historical data from up to 9 months prior, as well as the costs associated with compute, storage, databases, and data transfer out of the public cloud.
 
 
 
