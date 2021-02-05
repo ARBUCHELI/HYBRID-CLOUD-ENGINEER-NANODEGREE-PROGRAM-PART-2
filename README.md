@@ -1958,7 +1958,9 @@ What is a scope?
 
 * A scope is a logical group of your cloud resources that provides you with a custom view of your cloud resources.
 
+## Nutanix Cost Configuration
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=T4639nnQIho&feature=emb_logo)
 
 
 
