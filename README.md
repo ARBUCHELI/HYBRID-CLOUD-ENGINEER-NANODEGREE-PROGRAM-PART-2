@@ -2048,13 +2048,23 @@ For future projections, you need to add contract details which Beam will use acc
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/533.jpg)
 
+## Implementing Public Cloud Cost Savings in Beam
 
+Beam’s cost optimization module helps identify cost saving opportunities in public clouds and also provides financial governance across public and Nutanix private cloud.
 
+In this section, we will discuss how to identify potential cost savings for AWS and walk through various Beam cost saving suggestions. The same capabilities also apply to Azure. We’re going to discuss:
 
+* Viewing cloud cost details
+>> * We’ll cover several of Beam’s cost overview and analysis capabilities, as well as the dashboards and screens that are associated with them.
 
+* Eliminating unused resources
+>> * We will explore how you can use the Save dashboard to remove unused resources or ignore them in future audits with just a few clicks.
 
+* Rightsizing resources based on usage patterns
+>> * In this topic, we will look at how to optimize resource allocation — such as CPU and memory — for underutilized resources.
 
-
+* Purchasing reserved instances
+>> * And finally, we’ll also discuss how you can leverage Beam’s purchase recommendations for reserved instances to incur even greater cost savings.
 
 
 
