@@ -2138,6 +2138,13 @@ To eliminate a snapshot, select it and click <strong>Actions > Eliminate Selecte
 
 On the other hand, if you believe Beam’s cost audit needs to be changed to meet your organization’s requirements, you can edit the cost policy that governs this. Click the <strong>Edit Cost Policy</strong> link to view the cost policy responsible for flagging unused snapshots and modify it as needed.
 
+### QUESTION 1 OF 2
+What is the difference between suppressing an unused resource and eliminating it?
+
+* Suppress prevents a resource from being audited in the future; eliminate deletes the resource
+
+
+
 
 
 
