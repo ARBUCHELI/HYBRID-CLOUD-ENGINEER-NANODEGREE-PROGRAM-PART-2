@@ -2092,6 +2092,17 @@ Then, to see more granular information about current and projected spend, click 
 
 You can also view projected spend using historical data from up to 9 months prior, as well as the costs associated with compute, storage, databases, and data transfer out of the public cloud.
 
+## Quiz: Viewing Cloud Cost Details
+
+### QUIZ QUESTION
+You have an Azure account that’s linked to Beam and want to view details about the projected spend for the next 3 months. How will you navigate to the page that provides information?
+
+* Menu > Analyze > Projected Spend
+
+
+
+
+
 
 
 
