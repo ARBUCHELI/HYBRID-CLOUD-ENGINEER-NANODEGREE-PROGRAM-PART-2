@@ -2433,6 +2433,10 @@ The next step is to allocate the cluster level costs to individual VMs running o
 
 * 7. Logout by clicking the username <strong>HCE Beam##</strong> and selecting <strong>Log out.</strong>
 
+## Exercise Solution: Product Costs
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/536.jpg)](https://www.youtube.com/watch?v=62aS7ci2MzM&feature=emb_logo)
+
 
 
 
