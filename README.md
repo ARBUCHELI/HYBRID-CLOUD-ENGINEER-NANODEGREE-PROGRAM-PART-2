@@ -2437,7 +2437,15 @@ The next step is to allocate the cluster level costs to individual VMs running o
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/536.jpg)](https://www.youtube.com/watch?v=62aS7ci2MzM&feature=emb_logo)
 
+## Driving Financial Accountability Through Chargeback
 
+The Chargeback feature enables the financial control of your cloud spend by providing the ability to allocate costs associated with cloud resources to the appropriate departments that may have consumed those resources. This is done using an automated tag-based definition process. It provides a single, consolidated view of your finances across all your cloud accounts - private or multiple public clouds.
+
+In this section, we’re going to cover two major capabilities:
+
+* Cost Centers and Business Units: A cost center is a collection of resources within a single or multiple cloud accounts. You can assign the resources to the cost center based on cloud accounts and tags. You can either allocate a complete account or resources within an account to a cost center. A business unit is defined as a collection of cost centers. For example: you may have an Engineering business unit with multiple cost centers corresponding to the multiple engineering projects that might be the responsibility of that business unit.
+
+* Budgets and Budget Alerts: Although we’ll discuss this in more detail later, right now it’s important to note that budgets are highly customizable and can be defined for resource groups that span cloud accounts, regions, services or tags. You can set daily, weekly, or monthly budget limit alerts to track your cloud budget. If the threshold for cloud expenses is exceeded, Beam sends an email alert. You can specify who receives the email alert, and these alerts can be sent to multiple people.
 
 
 
