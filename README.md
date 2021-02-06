@@ -2532,6 +2532,13 @@ If you do not want to create alerts at the moment, click Skip Alert & Save. If y
 
 ![](https://video.udacity-data.com/topher/2020/September/5f69476f_beam-labs-budget-7-configure-alerts/beam-labs-budget-7-configure-alerts.png)
 
+## QUIZ QUESTION
+What sort of frequency can you define for budget alerts?
+
+* Daily, Weekly, Monthly
+
+
+
 
 
 
