@@ -2496,7 +2496,41 @@ What is the difference between a cost center and a business unit?
 
 * A cost center is a collection of resources within a single or multiple cloud accounts. A business unit is a collection of cost centers.
 
+## Budgets and Budget Alerts
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?time_continue=160&v=b5wnSXGEvPE&feature=emb_logo)
+
+Budgets can be defined at a highly granular level. While a financial admin’s focus is likely to be cost centers and business units, any consumer of cloud resources - like engineers - would be interested in setting up budgets and alerts for resources they consume without having to tie it into a cost center.
+
+For example, an engineer might want to set a budget alert for only the bare metal instances that are consumed in the Nutanix hybrid cloud without having to worry about what cost center that should be a part of and what additional resources should be there in the cost center.
+
+To actually create a budget, navigate to the Budget page in Beam. If you haven’t defined any budgets in Beam before, you will be prompted to create one. To create a new budget, click Create a Budget.
+
+On the first page, you’ll be prompted to select a type - Scope, Business Unit/Cost Center, or Custom. For this example, we’re going to create a custom budget, so we’ll select Custom and click Next.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6946f4_beam-labs-budget-2-select-type/beam-labs-budget-2-select-type.png)
+
+On the second page for a custom budget, you’ll be prompted to define a resource group. This grouping, called a scope, is what Beam will track costs against. Here, you have the option to choose a cloud, accounts, services, regions, and tags. You can choose any combination of these items; it is not necessary to select all in order to create a budget. So you can, for example, set up a budget for the EC2 service in the US East region without specifying any tags.
+
+After you make your resource selections, click Save. You will have the option to review your defined scope and edit it if needed. Once your scope changes are complete, click Next.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69470c_beam-labs-budget-3-create-resource-group/beam-labs-budget-3-create-resource-group.png)
+
+![](https://video.udacity-data.com/topher/2020/September/5f694723_beam-labs-budget-4-define-resource-group/beam-labs-budget-4-define-resource-group.png)
+
+On the third page, you will be presented with the option to define and allocate your budget. Here, you can name your budget, choose the financial year to which the budget applies, and select your allocation method. If you select Automatic Allocation, Beam will use your spending data to allocate a budget. If you select Manual Allocation, you can specify the annual budget, allocate that annual budget to each quarter of the year, or click a single link to distribute your annual budget equally.
+
+Once you have made your allocation, click Next.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69473f_beam-labs-budget-5-allocate-budget/beam-labs-budget-5-allocate-budget.png)
+
+The final step in the process is to define and add alerts. This is the only step of the process that you can skip and return to later if needed. You can set daily, weekly, or monthly budget limit alerts for resource groups to track the cloud budget. If the threshold for cloud expenses is exceeded, Beam will send an email to your registered email address. Multiple email addresses can be specified if you want multiple people to receive alerts.
+
+If you do not want to create alerts at the moment, click Skip Alert & Save. If you do want to create an alert, click Create in the Actions column, select the period from the drop down, and then specify a threshold. Click Save to save your alert, and then Save again to save your Budget and all of the associated parameters.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694759_beam-labs-budget-6-add-alerts/beam-labs-budget-6-add-alerts.png)
+
+![](https://video.udacity-data.com/topher/2020/September/5f69476f_beam-labs-budget-7-configure-alerts/beam-labs-budget-7-configure-alerts.png)
 
 
 
