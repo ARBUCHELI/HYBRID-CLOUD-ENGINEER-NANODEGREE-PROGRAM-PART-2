@@ -2347,7 +2347,7 @@ Again, you won’t need a workspace for the exercise, you’ll work in a new bro
 
 ### NOTE: Once a license key has been entered, Beam will populate your company's entire purchase history. Beam automatically populates product costs based on assumed market prices for all Nutanix products. The data shown in this lab is an anonymized example of the data populated for a company.
 
-* 4. If you are presented with a <strong>Disclaimer</strong> notice, click <strong>I Accept and Continue</strong>. Click the blue <strong>Configure Cost</storng> button to view how a customer can customize their exact costs for each purchase. This allows users to fine tune the cost of their Nutanix software and hardware licenses in case it is different from the market price that is assumed by Beam.
+* 4. If you are presented with a <strong>Disclaimer</strong> notice, click <strong>I Accept and Continue</strong>. Click the blue <strong>Configure Cost</strong> button to view how a customer can customize their exact costs for each purchase. This allows users to fine tune the cost of their Nutanix software and hardware licenses in case it is different from the market price that is assumed by Beam.
 
 * 5. The <strong>Inline cost editing</strong> box is selected by default and allows you to modify the <strong>Term</strong> (in months) and Cost. Review the Nutanix products and configurable columns. For bulk updates, click in the <strong>Upload and import</strong> box. An Excel spreadsheet of the <strong>Nutanix Cost Configuration Guidelines</strong> and the collected data from Nutanix can be downloaded, modified and uploaded.
 
