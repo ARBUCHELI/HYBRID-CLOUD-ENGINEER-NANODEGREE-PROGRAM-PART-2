@@ -2489,6 +2489,13 @@ When you click View Details, you will be taken to a page with a detailed breakdo
 
 ![](https://video.udacity-data.com/topher/2020/September/5f6946d2_beam-labs-chargeback-4-allocate-to-cost-center/beam-labs-chargeback-4-allocate-to-cost-center.png)
 
+## Quiz: Cost Centers and Business Units
+
+### QUIZ QUESTION
+What is the difference between a cost center and a business unit?
+
+* A cost center is a collection of resources within a single or multiple cloud accounts. A business unit is a collection of cost centers.
+
 
 
 
