@@ -2326,6 +2326,17 @@ The Total Cost of Ownership widget is specific to the selected cluster, but cont
 
 Finally, the table at the bottom provides a list of all VMs running on that cluster, along with their name; VM ID; details about vCPUs, memory, storage, state, and active hours; as well as the total cost involved in running that VM and the cost per hour.
 
+## Quiz: Cluster and VM Costing
+
+### QUIZ QUESTION
+What are the cost heads that factor into the TCO calculation for Nutanix private cloud infrastructure?
+
+* Services, Facilities, Hardware, People, Telecom, Software
+
+
+
+
+
 
 
 
