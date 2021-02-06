@@ -2231,7 +2231,17 @@ What information does Beam present about reserved instances in the Top Recommend
 
 * Suggestions for which reserved instances to purchase based on historical analysis of your usage
 
+## Implementing Cost Governance for Private Cloud
 
+In addition to finding potential public cloud cost savings, Beam’s cost optimization module also helps to create multi-cloud chargeback reports that drive accountability in terms of who is consuming what cloud resources.
+
+You can use tags to create highly customizable cost center views, allocate them to business units, send out cloud consumption reports and set up budget alerts. When consumption nears an allocated budget, Beam will send budget alerts so that you can take proactive cost saving actions to prevent your budget from being exceeded.
+
+In this section, we will discuss:
+
+* Nutanix TCO Configuration: Beam provides a total cost of ownership (TCO) model for Nutanix, which provides an accurate picture of the cost of owning and operating your on-prem infrastructure.
+
+* Cluster and VM Costing: Shows the cost view for different clusters that Beam manages, as well as the cost of each individual VM running on a given cluster.
 
 
 
