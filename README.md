@@ -2537,8 +2537,33 @@ What sort of frequency can you define for budget alerts?
 
 * Daily, Weekly, Monthly
 
+## Custom Reports
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=JOlYlPDmb5k&feature=emb_logo)
 
+Beam allows you to create highly customizable cost reports that you can schedule to be delivered to specific users daily, weekly, or monthly. As with other capabilities that we’ve discussed so far — like analysis, saving, and purchases — reports have their own sub-section of the Beam interface as well. To access it, click the main menu icon at the top left of the screen and select <strong>Reports.</strong>
+
+![](https://video.udacity-data.com/topher/2020/September/5f694793_reports-overview/reports-overview.png)
+
+As with other subsections, the first thing you’ll see is an overview dashboard that summarizes key reports at a very high level. Among other things, you’ll see widgets for Cost Report by Account; a collection of EC2 reports (since we are looking at the AWS reports screen in this example) such as RI recommendation, RI utilization, cost by instance type and so on. On this screen, you can also use the filter menu near the top right to view daily, weekly, or monthly reports.
+
+Then, at the top left of the screen, you’ll see two additional options — Scheduled and Custom. Clicking Scheduled will display a page with scheduled reports. Here, you can view reports that have been scheduled, as well as disable, edit, or delete reports.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6947ac_reports-scheduled/reports-scheduled.png)
+
+Finally, the third tab will allow you to view all custom reports that have been created and create new custom reports as needed. From the custom reports page, you can run a report immediately if you need to, or perform additional actions such as viewing, editing, downloading, scheduling, sharing, or deleting any of the custom reports in the list.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6947c5_reports-custom-page/reports-custom-page.png)
+
+Creating a new custom report, like most creation processes with Nutanix software, largely involves filling out a form. These reports are highly customizable across 10 dimensions and have many options for filters including services, accounts, availability zones and tags.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6947e2_reports-create-custom/reports-create-custom.png)
+
+Once you specify your dimensions and choose your metrics (cost and usage), time, and filters, you simply need to click <strong>Generate</strong> to set up, run, and save your custom report. For example, you could create a custom report with dimensions selected for “Service” and “Regions”. This will create a report of spending on each AWS service in each AWS region. You can then filter the data out to show only the daily cost for a particular AWS service (such as EC2) grouped together by regions.
+
+The following image shows what a custom report for the EC2 service, with daily cost grouped by region, would look like.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6947fb_beam-labs-custom-report-daily-ec2-spend-by-region/beam-labs-custom-report-daily-ec2-spend-by-region.png)
 
 
 
