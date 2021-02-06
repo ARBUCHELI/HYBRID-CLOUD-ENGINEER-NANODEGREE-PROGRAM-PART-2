@@ -2243,7 +2243,64 @@ In this section, we will discuss:
 
 * Cluster and VM Costing: Shows the cost view for different clusters that Beam manages, as well as the cost of each individual VM running on a given cluster.
 
+## Nutanix TCO Configuration
 
+Beam provides a total cost of ownership (TCO) model for Nutanix that shows the total cost of owning your Nutanix private cloud. It includes more than just the hardware and software license costs and provides an accurate picture of owning and operating your on-prem infrastructure.
+
+The benefit that this TCO model provides is immediate, out-of-the-box visibility into an approximation of the total on-prem costs. It’s incredibly useful to get a reasonably close approximation without asking a customer to input anything other than a license key number. In order to do this, the TCO model makes many assumptions and uses certain pre-configured industry standard values (eg: an average cost of $0.1 per kWh) which will vary from customer to customer but not by a whole lot. Customers get the benefit of a close enough approximation due to these pre-configured industry standard values and then, if they want, they can fine tune the values for more accuracy.
+
+As with AWS, in order to get started, we need to select our Nutanix account first. Once that has been done, you will see Beam’s main dashboard update accordingly.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694561_beam-labs-analyze-dashboard-single-cluster-details-page/beam-labs-analyze-dashboard-single-cluster-details-page.png)
+
+The dashboard provides four pieces of information:
+
+* An overview of your spend based on clusters
+* Spend analysis, and you can use a filter to view either daily or monthly details
+* Capacity analysis, with a similar filter for daily and monthly details
+* Recommended purchases
+
+Once you’re familiar with the dashboard, the next step is to ensure that Beam has been set up to use the Total Cost of Ownership model for Nutanix infrastructure cost calculations and modeling.
+
+To determine this, click the menu icon at the top left corner and select <strong>Configure > Nutanix Cost Configuration.</strong> Then, on the Cost Configuration page, click the Cluster tab. Since TCO is the default cost allocation basis, it will be displayed at the top of the page.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69457a_beam-labs-tco-cost-cluster-tab/beam-labs-tco-cost-cluster-tab.png)
+
+If you want to drill down and view additional details for any of the clusters listed here, click the Edit TCO link at the rightmost corner of any line item. The page that is displayed lists all of the major cost heads that comprise the TCO model.
+
+They are:
+
+### Hardware: 
+Includes Nutanix hardware license cost, which is automatically pulled from the sales database. Custom third-party hardware costs can be easily added here as well.
+
+### Software:
+Includes Nutanix software license cost, which is automatically pulled from the sales database. The cost of any nodes running vSphere are also automatically added using configurable pricing. Custom third-party software costs can be easily added.
+
+### Facilities:
+Includes power and cooling costs, and datacenter space costs for an on-prem hosted or a co-located datacenter. The power and cooling costs assume a certain efficiency ratio, power consumption (in kW) per hour for each node and cost per kWh. Datacenter space costs assume a certain cost per datacenter rack and the number of nodes that fit in a rack.The model calculates total power & cooling costs based on the number of Nutanix nodes and multiplying that by the cost of power consumed per node. The model calculates total datacenter space costs based on the number of Nutanix nodes and multiplying that by the cost of the datacenter racks needed per node.
+
+### Telecom:
+Includes Ethernet/top of rack switch costs. The model assumes a certain number of ethernet ports needed per node, the number of ports in an ethernet switch and the cost per ethernet switch. The model calculates total Telecom costs based on the number of Nutanix nodes and multiplying that by the cost of ethernet switches needed per node.
+
+### People: 
+IT admin salary based on the number of admins you need to manage your Nutanix infrastructure and an assumed salary for them.
+
+### Services:
+Any Nutanix or third-party professional services that you may have paid for.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694598_beam-labs-tco-cost-facilities-page/beam-labs-tco-cost-facilities-page.png)
+
+The TCO model is highly customizable and can be set for each cluster. Beam uses Pulse to track the VMs running in each cluster and allocate the cluster level cost (calculated using the TCO model) to each individual VM. The cost calculation depends on the resources allocated to that VM relative to the total resources on that cluster and how long the VM was running.
+
+Now, if we return to the Cost Configuration page and turn our attention to the second tab, VM, you’ll notice something interesting.
+
+When you switch to the VM tab, you will see an option to specify Actual Virtual Capacity or Target Virtual Capacity. This applies to all VMs in the cluster for which this option is selected.
+
+What does actual virtual capacity mean? Beam gets information about the virtual capacity allocated to each VM, such as vCPUs, and virtual storage. (If you think back to the earliest lesson of this program, this is possible because the physical compute and storage capacity on a cluster are virtualized before they are allocated to VMs.) These vCPUs and virtual storage resources are actually assigned to the VM - hence the name "actual virtual capacity".
+
+But what about scenarios in which users don’t like the virtual capacity that Beam allocates? If users want to select their own capacity, they can switch to Target Virtual Capacity and specify the ratio in which they want their physical resources to be virtualized and allocated to their VMs. That is, they can specify the vCPU:pCPU ratio (pCPU = physical CPU) and similarly vStorage:pStorage ratio. This is known as an overcommit ratio.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6945b1_beam-labs-tco-cost-vm-tab/beam-labs-tco-cost-vm-tab.png)
 
 
 
