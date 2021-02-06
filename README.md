@@ -2351,7 +2351,7 @@ Again, you won’t need a workspace for the exercise, you’ll work in a new bro
 
 * 5. The <strong>Inline cost editing</strong> box is selected by default and allows you to modify the <strong>Term</strong> (in months) and Cost. Review the Nutanix products and configurable columns. For bulk updates, click in the <strong>Upload and import</strong> box. An Excel spreadsheet of the <strong>Nutanix Cost Configuration Guidelines</strong> and the collected data from Nutanix can be downloaded, modified and uploaded.
 
-* 6. Click the <strong>X>/strong> at the upper right to close Cost Configurations.
+* 6. Click the <strong>X</strong> at the upper right to close Cost Configurations.
 
 ### TCO Configuration
 
