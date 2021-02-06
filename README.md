@@ -2245,6 +2245,8 @@ In this section, we will discuss:
 
 ## Nutanix TCO Configuration
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=IBk6KY2U5V4&feature=emb_logo)
+
 Beam provides a total cost of ownership (TCO) model for Nutanix that shows the total cost of owning your Nutanix private cloud. It includes more than just the hardware and software license costs and provides an accurate picture of owning and operating your on-prem infrastructure.
 
 The benefit that this TCO model provides is immediate, out-of-the-box visibility into an approximation of the total on-prem costs. It’s incredibly useful to get a reasonably close approximation without asking a customer to input anything other than a license key number. In order to do this, the TCO model makes many assumptions and uses certain pre-configured industry standard values (eg: an average cost of $0.1 per kWh) which will vary from customer to customer but not by a whole lot. Customers get the benefit of a close enough approximation due to these pre-configured industry standard values and then, if they want, they can fine tune the values for more accuracy.
@@ -2305,6 +2307,40 @@ But what about scenarios in which users don’t like the virtual capacity that B
 ## Quiz: Nutanix TCO Configuration
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/535.jpg)
+
+## Cluster and VM Costing
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=Jd1bvN8PQjY&feature=emb_logo)
+
+To view a summary of your VM and Nutanix cluster costs, click the menu button at the top left of the screen and select <strog>Analyze.</strong> From the row of options at the top left, select <strong>VM Costing.</strong>
+
+![](https://video.udacity-data.com/topher/2020/September/5f6945d9_beam-labs-analyze-page-vm-costing/beam-labs-analyze-page-vm-costing.png)
+
+The costs that you see in the Spend Overview widget represent the real cost of running Nutanix clusters — assuming that the TCO model has been configured correctly. To drill down further, choose a cluster from the Cluster Details widget at the bottom of the screen and click <strong>View Details.</strong>
+
+At first glance, the details page seems similar to the VM Costing dashboard — but a closer look will reveal noticeable differences.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6945f2_beam-labs-analyze-dashboard-single-cluster-details-page-1/beam-labs-analyze-dashboard-single-cluster-details-page-1.png)
+
+The Total Cost of Ownership widget is specific to the selected cluster, but contains the same breakdown with Cost Heads as the overview dashboard. The cluster details widget provides a lot of useful information about the cluster itself, including the hypervisor, number of VMs, the status of Pulse, and the ratio of physical to virtual CPUs and physical to virtual storage.
+
+Finally, the table at the bottom provides a list of all VMs running on that cluster, along with their name; VM ID; details about vCPUs, memory, storage, state, and active hours; as well as the total cost involved in running that VM and the cost per hour.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
