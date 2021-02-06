@@ -2778,7 +2778,31 @@ A cost reporting option in Xi Beam. If you select this option, Beam reports the 
 ### Xi Beam: 
 Xi Beam by Nutanix is a software-as-a-service product that helps customers with cost governance for both their public and private clouds. Beam’s cost optimization capabilities help identify cost saving opportunities in public clouds, and also enable chargeback and budgeting across public and private clouds.
 
+## Lesson Conclusion
 
+Congratulations! You’ve made it to the very end — not just to the end of this course, but to the end of the Hybrid Cloud Engineer Nanodegree program as well. Before you move on to your project for this course, let’s take a moment to run through everything we’ve discussed in this course.
+
+With the foundation that we laid for Calm in the previous course, our objective this time around was expansion — to take everything you learned about using Calm for private cloud blueprints and extending it into the public cloud.
+
+To achieve that, we began with a discussion of DevOps, because hybrid operations and technologies require a broader, hybrid perspective. We covered several concepts that will help shape the way you design and define organizational processes and workflows in the future — immutable infrastructure, continuous integration, delivery, deployment, and operations, and more.
+
+Then, we plunged headfirst into the public cloud itself, focusing specifically on AWS and everything you need to know to make your blueprint truly hybrid. And now, we’ve concluded with several major considerations for managing the costs of private and public clouds, and how you can achieve that with Xi Beam.
+
+To quickly recap: Beam is a Nutanix software-as-a-service product that helps customers with cost governance for both their public and private clouds. Beam’s cost optimization capabilities (called the cost optimization module) help identify cost saving opportunities in public clouds, and also enable financial governance across public and private clouds.
+
+Beam’s cost optimization module helps provide visibility into multi-cloud spend across clouds such as AWS, Azure, and Nutanix. It comes with several features that provide an average of 35% or more in public cloud cost savings through elimination of unused resources, right-sizing of underutilized resources and purchase recommendations for reserved instances.
+
+Finally, we discussed several of Beam’s major capabilities, including:
+
+* How you can configure cost policies
+* What you need to do to achieve public cloud cost savings
+* How you can implement private cloud governance
+* Using the chargeback mechanism to drive financial accountability
+* Various reporting and alert capabilities that are available in Beam, out of the box
+
+And that about sums it up.
+
+Before we close, thank you for your time, for your perseverance, and for coming on this hybrid cloud computing journey with us. We hope we’ve been able to take our accumulated knowledge and present you with insights, with guidance, and with information that will help you shape your own journey with private, public, and hybrid clouds — both now and in the future as you continue your career in IT. Good luck.
 
 
 
