@@ -2447,6 +2447,51 @@ In this section, we’re going to cover two major capabilities:
 
 * Budgets and Budget Alerts: Although we’ll discuss this in more detail later, right now it’s important to note that budgets are highly customizable and can be defined for resource groups that span cloud accounts, regions, services or tags. You can set daily, weekly, or monthly budget limit alerts to track your cloud budget. If the threshold for cloud expenses is exceeded, Beam sends an email alert. You can specify who receives the email alert, and these alerts can be sent to multiple people.
 
+## Cost Centers and Business Units
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/532.jpg)](https://www.youtube.com/watch?v=LQa41XtEOmg&feature=emb_logo)
+
+A cost center is a collection of resources within a single or multiple cloud accounts. You can assign resources to a cost center based on tags. You can either allocate a complete account or resources within an account to a cost center.
+
+A business unit is defined as a collection of cost centers. You can use the business units to define hierarchies in your organization between different departments. It is not necessary to define a business unit to create chargeback views. You can define chargeback based only on cost centers.
+
+To access the Chargeback section of Beam and work with cost centers and business units, click the menu icon at the top left of the screen and select Chargeback. The dashboard that appears summarizes spending by cost center and business unit.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694624_chargeback-allocated/chargeback-allocated.png)
+
+On the Chargeback dashboard, you can switch between viewing Allocated and Unallocated resources, view data from different periods of time using a drop down menu, and create a business unit or a cost center.
+
+Creating a cost center, as you may expect by now, simply involves filling out a form. You need to provide a name for the cost center, specify the owners, and optionally add viewers and the business unit with which this cost center is meant to be associated.
+
+Then, you need to define the cost center, which involves adding one or more cloud accounts, sub-accounts, and tags to that cost center. After your cost center has been defined, you need to save the definition and then save the cost center to complete the process.
+
+![](https://video.udacity-data.com/topher/2020/September/5f69463e_chargeback-create-cost-center/chargeback-create-cost-center.png)
+
+![](https://video.udacity-data.com/topher/2020/September/5f694658_beam-labs-define-cost-center-dialog-box/beam-labs-define-cost-center-dialog-box.png)
+
+Since a business unit is a collection of cost centers, creating one is even simpler. You simply need to specify a name, the owners, viewers, and associated cost centers to create a business unit. No other information is needed.
+
+![](https://video.udacity-data.com/topher/2020/September/5f694675_chargeback-business-unit/chargeback-business-unit.png)
+
+To actually charge the cost of unallocated resources back to a business unit, on the Chargeback page, switch to the Unallocated tab. The dashboard will display an overview of spending, an analysis of the unallocated cost, a list of the highest contributors to cloud spend, and a detailed list of unallocated items.
+
+If you’re wondering why the items in this list are unallocated, it’s because they were either not tagged at all or their tags were not covered under the cost center definition.
+
+To allocate the cost to a cost center, first select an item from the list in the bottom half of the page, and then click <strong>View Details.</strong>
+
+![](https://video.udacity-data.com/topher/2020/September/5f69468e_beam-labs-chargeback-1-unallocated-tab/beam-labs-chargeback-1-unallocated-tab.png)
+
+![](https://video.udacity-data.com/topher/2020/September/5f6946a5_beam-labs-chargeback-2-click-view-details/beam-labs-chargeback-2-click-view-details.png)
+
+When you click View Details, you will be taken to a page with a detailed breakdown of the associated cloud resources, and the cost of each. You will also see that each resource has an option for <strong>Allocate.</strong> Clicking this will allow you to assign that resource to a cost center and actually charge the cost of that resource back to the department or business unit that consumed it. In addition, all future costs associated with that unallocated resource will automatically be added to the cost center that you just manually specified.
+
+![](https://video.udacity-data.com/topher/2020/September/5f6946bd_beam-labs-chargeback-3-details-view/beam-labs-chargeback-3-details-view.png)
+
+![](https://video.udacity-data.com/topher/2020/September/5f6946d2_beam-labs-chargeback-4-allocate-to-cost-center/beam-labs-chargeback-4-allocate-to-cost-center.png)
+
+
+
+
 
 
 
