@@ -2333,7 +2333,105 @@ What are the cost heads that factor into the TCO calculation for Nutanix private
 
 * Services, Facilities, Hardware, People, Telecom, Software
 
+## Exercise: Product Costs
 
+In this exercise, you will ensure Beam has accurate cost data for the private cloud.
+
+Again, you won’t need a workspace for the exercise, you’ll work in a new browser tab.
+
+* 1. In a new web browser tab, go to [https://beam.nutanix.com](https://beam.nutanix.com) and click <strong>Sign in with My Nutanix.</strong>
+
+* 2. Use **hce-beam##@udacity.com as your email address. Replace ## with your day of birth. E.g., if your birthday is January 5,that equates to [hce-beam05@udacity.com]. ## will have values from 01 to 31. (If for any reason your login does not work, you may try a value of ## = 32, 33 or 34). The password will be Nutanix1234@**.
+
+* 3. From the toolbar at the top left, click the Entities menu and select Configure > Nutanix Cost Configuration.
+
+NOTE: Once a license key has been entered, Beam will populate your company's entire purchase history. Beam automatically populates product costs based on assumed market prices for all Nutanix products. The data shown in this lab is an anonymized example of the data populated for a company.
+
+If you are presented with a Disclaimer notice, click I Accept and Continue. Click the blue Configure Cost button to view how a customer can customize their exact costs for each purchase. This allows users to fine tune the cost of their Nutanix software and hardware licenses in case it is different from the market price that is assumed by Beam.
+
+The Inline cost editing box is selected by default and allows you to modify the Term (in months) and Cost. Review the Nutanix products and configurable columns. For bulk updates, click in the Upload and import box. An Excel spreadsheet of the Nutanix Cost Configuration Guidelines and the collected data from Nutanix can be downloaded, modified and uploaded.
+
+Click the X at the upper right to close Cost Configurations.
+
+TCO Configuration
+
+Beam uses a built-in total cost of ownership (TCO) model for Nutanix that provides out-of-the-box visibility into the true cost of running the Nutanix private cloud.
+
+The TCO model includes several cost heads that are automatically populated depending on the number of Nutanix nodes and some industry standard assumptions that are built into the model. Learn how to configure the TCO model:
+
+Go to Entities > Configure > Nutanix Cost Configuration. Above the blue Configure Cost button, select the Cluster tab.
+
+You are presented with a list of pre-configured/pre-discovered clusters. Select a cluster and take note of the last four digits in the Cluster ID and save this ID in Notepad/Wordpad and place in your Workspace folder. You will need this in a later exercises. Click Edit TCO next to that cluster.
+
+On the cluster page, the Hardware tab is selected by default. Click on Nutanix Hardware Cost. This reflects the cost of the NX-series hardware servers that power your private cloud. This cost is automatically pulled by Beam based on the customer purchase history. Various fields such as the product model, number of blocks and number of nodes are automatically populated based on purchase history. The total hardware purchase cost is amortized to show a monthly value based on the number of months in the purchase term.
+
+You can also see third party hardware costs by clicking Third Party Hardware Costs and reviewing the current values. These costs reflect the underlying hardware servers that Nutanix supports as OEM or third-party nodes different from the NX-series hardware servers. By clicking Configure you can modify the OEM/third party hardware costs if they are different from those calculated by Beam.
+
+Customers can also optionally enter a custom value for their memory costs by clicking on Edit Custom RAM cost. Beam knows how much RAM is available for a particular Cluster (shown under Memory Capacity in GB) but does not have the cost of memory purchase. Customers can manually enter a monthly memory cost per GB and Beam will add the total monthly cost for memory to the TCO model.
+
+Add a third party custom software cost. Click the Software tab and then click + Add Custom Third Party Software Cost. Fill out the fields in the following order:
+
+Cost Description: ABC Software Licensing Cost per License: 50 Cost Type: Term Based Term: 5 years Start Date: Choose the current month and year. Recurring: Monthly Number of Licenses: 25000
+
+Click Add Costs. This should now show Third Party Software Cost with a current value of $20,833. Click the dropdown arrow next to the dollar amount to see the custom configuration details.
+
+Add a third party custom service cost. Click the Services tab and them click + Add Custom Third Party Services Cost. Fill out the fields in the following order:
+
+Cost Description: Onsite Consultant Start Date: Choose the current month and year. Cost Type: Recurring Cost to be Added: 10000 End Date: Choose December of next year. Recurring: Monthly
+
+Click Add Costs. This should now show Custom Services Cost with a current value of $10,000. Click the dropdown arrow next to the dollar amount to see the custom configuration details.
+
+Navigate through the other tabs to familiarize yourself with the information presented. All costs are amortized to a monthly level.
+
+Software
+
+Includes all Nutanix software license costs which are automatically pulled from customer purchase history in Salesforce. Costs associated with any Nutanix nodes running vSphere are also automatically calculated assuming a vSphere license cost of $210/processor and 2 processors per node.
+
+Any additional software costs, such as a third-party application performance monitoring software cost can be added manually. All software costs are amortized on a monthly basis.
+
+Facilities
+
+Includes power and cooling costs, and datacenter space costs for the datacenter used to run the Nutanix Private Cloud.
+
+Telecom
+
+Includes Ethernet/top-of-rack switch costs that are automatically calculated depending only on number of nodes.
+
+Services
+
+This cost head includes any Nutanix or third-party professional services that you may have paid for.
+
+People
+
+This cost head includes the cost incurred on IT Admin salaries for the administrative staff employed to maintain your Nutanix Private Cloud.
+
+The power of the TCO model lies in being able to centralize all costs associated with a private cloud into one unified view and providing a good approximation of the customer private clouds cost without any configuration needed at all. At the same time, the TCO model is highly customizable and can also be configured separately for each cluster.
+
+Close the TCO view by clicking the X at the upper right.
+
+Above the blue Configure Cost button, click the VM tab and review the configuration for VM costs. In the VM Costing Model column, you can toggle between the Actual Virtual Capacity or a specified Target Virtual Capacity for the VM Costing Model.
+
+Cluster and VM Costing
+
+The next step is to allocate the cluster level costs to individual VMs running on the cluster.
+
+Click the Entities menu and select Analyze. A user experience popup may show offering a tour of the product. You may take the tour or close the popup.
+
+On the Analyze page, look to the upper right, next to View:. This is the View Selector. Make sure it says Nutanix. If this shows AWS or Azure, then click on it to popup the View Selector.
+
+In the View Selector dialog box, click Nutanix in the left column and then click the Beam Lab Nutanix Account under Select Account. This will change the view to show the Nutanix account information.
+
+Click the VM Costing tab and under Cluster Details, search for the last four digits of the Cluster ID you saved earlier in your Workspace folder.
+
+Click View Details to see the detailed TCO based cost breakdown for this cluster.
+
+In this view you will see detailed cost analysis for each VM. Click on any row to see the VM cost analysis over a period relative to the resources allocated to the VM (vCPU, Storage, Memory)
+
+Note: The cost of each individual VM running in this cluster has been automatically calculated. If the TCO model has been accurately configured, these costs represent the true cost of running that VM in the Nutanix Private Cloud. This is critical information that should be available to modern Hybrid Cloud Engineers so that they can more accurately make decisions on which cloud is suitable for which workload, at least from a cost perspective.
+
+Note: It takes up to 6 hours for VM costing data to show up after a Nutanix account is configured in Beam. The TCO model is baked into the product and VM costs will be calculated out-of-the-box using the default values of the TCO model. The model can be fine-tuned depending on customer need.
+
+Logout by clicking the username HCE Beam## and selecting Log out.
 
 
 
