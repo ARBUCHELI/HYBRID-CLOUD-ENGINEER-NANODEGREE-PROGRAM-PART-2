@@ -2302,6 +2302,10 @@ But what about scenarios in which users don’t like the virtual capacity that B
 
 ![](https://video.udacity-data.com/topher/2020/September/5f6945b1_beam-labs-tco-cost-vm-tab/beam-labs-tco-cost-vm-tab.png)
 
+## Quiz: Nutanix TCO Configuration
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/535.jpg)
+
 
 
 
