@@ -2727,7 +2727,9 @@ By acting upon all Beam's cost saving recommendations, Beam’s public cloud cus
 
 This completes the Cloud Cost Governance exercise.
 
+## Exercise Solution: Cost Center Reporting
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-PART-2/main/images/536.jpg)](https://www.youtube.com/watch?v=38dF1hDQLA8&feature=emb_logo)
 
 
 
